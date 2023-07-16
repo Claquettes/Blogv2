@@ -5,6 +5,8 @@
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 4px;
+  padding-top: 3rem;
+  margin-top: 2rem;
 }
 
 .article-title{
@@ -17,4 +19,21 @@
     font-size: 1.1rem;
     text-align: justify;
     padding: 1rem;
+}
+
+.article:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: 1s;
+}
+
+img{
+    max-width: 25%;
+    height: auto;
+}
+.article-content-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
 }

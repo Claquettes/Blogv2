@@ -44,7 +44,10 @@ function MyComponent(props: Article) {
         <TopBarArticle Author={Author} Date={Date} Language={Language} />
       </div>
       <div className="article-content">
-        <div className="article-content-images"></div>
+        <div className="article-content-images">
+          <img src={Image1Link} alt="Image1" />
+          <img src={Image2Link} alt="Image2" />
+        </div>
         <div className="article-content-text">
           <p>{Content}</p>
         </div>

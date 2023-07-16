@@ -2,7 +2,10 @@
     font: 1.1rem 'Roboto', sans-serif;
     color: #000;
     border-radius: 0.5rem;
+    text-decoration: underline;
+    padding: 0.5rem;
     text-decoration: none;
+
 }
 
 .nav-item:hover{
@@ -10,3 +13,4 @@
     color: #fff;
     transition: 1s;
 }
+
