@@ -15,14 +15,14 @@ function BasicExample() {
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Socials" id="basic-nav-dropdown">
               <NavDropdown.Item
-                href="#action/3.1"
+                href="https://www.linkedin.com/in/mathieu-ponton/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Linkedin
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="#action/3.2"
+                href="https://wakatime.com/@Claquettes"
                 target="_blank"
                 rel="noreferrer"
               >

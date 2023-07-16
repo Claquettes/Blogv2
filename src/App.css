@@ -1,0 +1,17 @@
+.Articles-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+}
+
+.article{
+    width: 90%;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 2rem;
+}

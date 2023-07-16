@@ -1,3 +1,6 @@
+import TopBar from "./TopBar";
+import TopBarArticle from "./TopBarArticle";
+
 interface Article {
   //visibles to the outside
   Title: string;
@@ -35,6 +38,7 @@ function MyComponent(props: Article) {
   return (
     <div className="article">
       <h2>{Title}</h2>
+      <TopBarArticle />
       <p className="id">{Id}</p>
       <div className="article-meta">
         <p>Author: {Author}</p>
