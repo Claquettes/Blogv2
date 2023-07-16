@@ -1,4 +1,3 @@
-import TopBar from "./TopBar";
 import TopBarArticle from "./TopBarArticle";
 
 //we import the css file
@@ -40,21 +39,14 @@ function MyComponent(props: Article) {
 
   return (
     <div className="article">
-      <h2>{Title}</h2>
-      <TopBarArticle Author={Author} Date={Date} Language={Language} />
-      <p className="id">{Id}</p>
+      <p className="article-title">{Title}</p>
       <div className="article-meta">
-        <span>Author: {Author}</span>
-        <span>Date: {Date}</span>
-        <span>Language: {Language}</span>
+        <TopBarArticle Author={Author} Date={Date} Language={Language} />
       </div>
       <div className="article-content">
-        <div className="article-content-images">
-          <ul className="list-group">
-            <li className="list-group-item">An item</li>
-            <li className="list-group-item">A second item</li>
-            <li className="list-group-item">A third item</li>
-          </ul>
+        <div className="article-content-images"></div>
+        <div className="article-content-text">
+          <p>{Content}</p>
         </div>
       </div>
       <div className="article-links">
