@@ -1,6 +1,9 @@
 import TopBar from "./TopBar";
 import TopBarArticle from "./TopBarArticle";
 
+//we import the css file
+import "./styles/Article.css";
+
 interface Article {
   //visibles to the outside
   Title: string;
