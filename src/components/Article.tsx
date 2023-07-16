@@ -38,12 +38,12 @@ function MyComponent(props: Article) {
   return (
     <div className="article">
       <h2>{Title}</h2>
-      <TopBarArticle />
+      <TopBarArticle Author={Author} Date={Date} Language={Language} />
       <p className="id">{Id}</p>
       <div className="article-meta">
-        <p>Author: {Author}</p>
-        <p>Date: {Date}</p>
-        <p>Language: {Language}</p>
+        <span>Author: {Author}</span>
+        <span>Date: {Date}</span>
+        <span>Language: {Language}</span>
       </div>
       <div className="article-content">
         <div className="article-content-images">

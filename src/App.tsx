@@ -4,7 +4,7 @@ import Article from "./components/Article";
 //we import the css file
 import "./App.css";
 
-const instances = [{ name: "DevBlog", value: 10 }];
+const instances = [{ name: "DevBlog", value: 10, Author: "Calquettes" }];
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
               key={index}
               Title={instance.name}
               Id={instance.value}
-              Author="Author"
+              Author={instance.Author}
               Date="Date"
               Language="Language"
               Content="Content"
