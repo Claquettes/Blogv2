@@ -1,5 +1,6 @@
 import TopBar from "./components/TopBar";
 import Article from "./components/Article";
+import FilterSelector from "./components/FilterSelector";
 
 //we import the css file
 import "./App.css";
@@ -13,8 +14,8 @@ const instances = [
       "In luctus porta blandit. Morbi vitae metus semper, accumsan nisl eu, blandit odio. Maecenas cursus pulvinar quam, et tincidunt sapien. Curabitur pellentesque ac elit a tristique. Suspendisse sed posuere sem. Donec in lobortis ligula. Aliquam fringilla sed tortor in condimentum. Suspendisse potenti. Sed cursus accumsan ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
     Date: "12/12/2020",
     Language: "C++",
-    Image1Link: "https://via.placeholder.com/150",
-    Image2Link: "https://via.placeholder.com/150",
+    Image1Link: "https://claq.fr/host/cw1.png",
+    Image2Link: "https://claq.fr/host/cw2.png",
   },
   {
     name: "DevBlog2",
@@ -34,6 +35,7 @@ function App() {
     <>
       <TopBar />
       <div>
+        <FilterSelector />
         <div className="Articles-container">
           {instances.map((instance, index) => (
             <Article
