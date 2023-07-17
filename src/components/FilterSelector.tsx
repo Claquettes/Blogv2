@@ -17,7 +17,12 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
 
   return (
     <ButtonGroup>
-      <DropdownButton as={ButtonGroup} title="Order by" id="bg-nested-dropdown">
+      <DropdownButton
+        as={ButtonGroup}
+        title="Order by"
+        id="bg-nested-dropdown"
+        className="custom-button"
+      >
         <Dropdown.Item eventKey="chronoOrder">
           Chronological Order
         </Dropdown.Item>
@@ -29,6 +34,7 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
         as={ButtonGroup}
         title="Filter by Language"
         id="bg-nested-dropdown"
+        className="custom-button"
       >
         <Dropdown.Item
           eventKey="c++"
@@ -65,6 +71,7 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
         as={ButtonGroup}
         title="Filter by Year"
         id="bg-nested-dropdown"
+        className="custom-button"
       >
         <Dropdown.Item eventKey="2023">2023</Dropdown.Item>
         <Dropdown.Item eventKey="2022">2022</Dropdown.Item>
@@ -73,6 +80,7 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
         as={ButtonGroup}
         title="Show only"
         id="bg-nested-dropdown"
+        className="custom-button"
       >
         <Dropdown.Item eventKey="websites">Websites</Dropdown.Item>
         <Dropdown.Item eventKey="games">Games</Dropdown.Item>

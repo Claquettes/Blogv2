@@ -5,3 +5,32 @@
     margin-left: 50%;
     transform: translateX(-50%);
 }
+
+/* FilterSelector.css */
+
+
+.btn{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: aliceblue;
+}
+
+.dropdown-toggle{
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}

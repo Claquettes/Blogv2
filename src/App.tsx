@@ -45,7 +45,10 @@ function App() {
     <>
       <TopBar />
       <div>
-        <FilterSelector onLanguageChange={handleLanguageChange} />
+        <div className="FilterSelectorContainer">
+          <FilterSelector onLanguageChange={handleLanguageChange} />
+        </div>
+
         <div className="Articles-container">
           {filteredArticles.map((instance, index) => (
             <Article
