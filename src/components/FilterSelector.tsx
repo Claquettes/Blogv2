@@ -2,10 +2,19 @@ import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
+import React, { useState } from "react";
 
 import "./styles/FilterSelector.css";
 
-function NestedExample() {
+interface FilterSelectorProps {
+  onLanguageChange: (language: string) => void;
+}
+
+function NestedExample({ onLanguageChange }: FilterSelectorProps) {
+  const handleLanguageChange = (language: string) => {
+    onLanguageChange(language);
+  };
+
   return (
     <ButtonGroup>
       <DropdownButton as={ButtonGroup} title="Order by" id="bg-nested-dropdown">
@@ -21,11 +30,36 @@ function NestedExample() {
         title="Filter by Language"
         id="bg-nested-dropdown"
       >
-        <Dropdown.Item eventKey="c++">C++</Dropdown.Item>
-        <Dropdown.Item eventKey="js">JavaScript</Dropdown.Item>
-        <Dropdown.Item eventKey="python">Python</Dropdown.Item>
-        <Dropdown.Item eventKey="ts">TypeScript</Dropdown.Item>
-        <Dropdown.Item eventKey="php">PHP</Dropdown.Item>
+        <Dropdown.Item
+          eventKey="c++"
+          onClick={() => handleLanguageChange("C++")}
+        >
+          C++
+        </Dropdown.Item>
+        <Dropdown.Item
+          eventKey="js"
+          onClick={() => handleLanguageChange("JavaScript")}
+        >
+          JavaScript
+        </Dropdown.Item>
+        <Dropdown.Item
+          eventKey="python"
+          onClick={() => handleLanguageChange("Python")}
+        >
+          Python
+        </Dropdown.Item>
+        <Dropdown.Item
+          eventKey="ts"
+          onClick={() => handleLanguageChange("TypeScript")}
+        >
+          TypeScript
+        </Dropdown.Item>
+        <Dropdown.Item
+          eventKey="php"
+          onClick={() => handleLanguageChange("PHP")}
+        >
+          PHP
+        </Dropdown.Item>
       </DropdownButton>
       <DropdownButton
         as={ButtonGroup}

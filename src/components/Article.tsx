@@ -41,7 +41,11 @@ function MyComponent(props: Article) {
     <div className="article">
       <p className="article-title">{Title}</p>
       <div className="article-meta">
-        <TopBarArticle Author={Author} Date={Date} Language={Language} />
+        <TopBarArticle
+          Author={Author}
+          Date={Date}
+          Language={Language.toLowerCase()}
+        />
       </div>
       <div className="article-content">
         <div className="article-content-images">
