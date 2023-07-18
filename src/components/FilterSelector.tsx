@@ -42,10 +42,7 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
         >
           C++
         </Dropdown.Item>
-        <Dropdown.Item
-          eventKey="js"
-          onClick={() => handleLanguageChange("JavaScript")}
-        >
+        <Dropdown.Item eventKey="js" onClick={() => handleLanguageChange("Js")}>
           JavaScript
         </Dropdown.Item>
         <Dropdown.Item
