@@ -48,7 +48,8 @@ function MyComponent(props: Article) {
       <div className="article-content">
         <div className="article-content-images">
           <img src={Image1Link} alt="Image1" />
-          <img src={Image2Link} alt="Image2" />
+
+          {Image2Link && <img src={Image2Link} alt="Image2" />}
         </div>
         <div className="article-content-text">
           <p>{Content}</p>
