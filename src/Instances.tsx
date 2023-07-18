@@ -107,7 +107,7 @@ const instances: Instance[] = [
     Author: "Mathieu Ponton | Maxime Antoine",
     Content: `Made using react-native with <a href="https://www.maxime-antoine.fr/">Maxime Antoine</a>, Polydarts is a mobile application that helps dart players to keep track of their scores. The user can choose between different games (301, 501, Cricket, etc...) but also between "fun modes" (golden carrot, catch the rabbit, etc...). The application also contains stats about the player's games. The goal is to help players keep track of their scores, stats, and also to create a new way to play darts with the fun modes.`,
     Date: "2023-01-17",
-    Language: "React-Native",
+    Language: "ReactNative",
     Image1Link: "https://claq.fr/host/Polydarts.png",
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Polydarts",
@@ -378,11 +378,11 @@ const instances: Instance[] = [
   //22th instance
   {
     name: "Cookin'",
-    Author: "Mathie Ponton",
+    Author: "Mathieu Ponton",
     Content:
       "Cookin is an app build with React Native. It allows user to interract with websites Marmiton, a site that contains a lot of recipes. The user can search for recipes, use filters, or ask for a random recipe. The next features to implement are the ability to mark a recipe as favorite, and to create a shopping list from a recipe. The app is available in french and english. It is published in the Expo Store. The app is still in development.",
     Date: "2023-06",
-    Language: "React-Native",
+    Language: "ReactNative",
     Image1Link: "https://claq.fr/host/cookin.png",
     Image2Link: "",
     GithubRepoLink: "",

@@ -39,36 +39,38 @@ function MyComponent(props: Article) {
   function getBadgeUrls(language: string): string[] | undefined {
     const badges: Record<string, string[]> = {
       python: [
-        "https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white",
+        "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
       ],
       js: [
-        "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black",
-        "https://img.shields.io/badge/HTML-239120?style=flat&logo=html5&logoColor=white",
-        "https://img.shields.io/badge/CSS-239120?&style=flat&logo=css3&logoColor=white",
+        "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+        "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
       ],
       cpp: [
-        "https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white",
+        "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
       ],
       typescript: [
-        "https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white",
+        "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
       ],
       react: [
         "https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB",
       ],
       html: [
-        "https://img.shields.io/badge/HTML-239120?style=flat&logo=html5&logoColor=white",
+        "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
       ],
       css: [
         "https://img.shields.io/badge/CSS-239120?&style=flat&logo=css3&logoColor=white",
       ],
       angular: [
-        "https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white",
+        "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white",
       ],
       bootstrap: [
         "https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white",
       ],
       php: [
-        "https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white",
+        "https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white",
+      ],
+      reactnative: [
+        "https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
       ],
     };
 
