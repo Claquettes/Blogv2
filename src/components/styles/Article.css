@@ -6,13 +6,15 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   padding-top: 3rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding-top: 12px;
+  margin-bottom: 1rem;
 }
 
 .article-title{
     color: #333;
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 
 .article-content-text{
@@ -28,7 +30,7 @@
 
 img{
     max-width: 25%;
-    max-height: 30%;
+    max-height: 15%;
     height: auto;
 }
 .article-content-images{

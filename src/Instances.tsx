@@ -8,10 +8,6 @@ type Instance = {
   Image2Link: string; // Make Image2Link optional using `?`
   GithubRepoLink: string; // Make GithubRepoLink optional using `?`
   HostLink: string;
-  IsAWebsite: boolean;
-  IsAGame: boolean;
-  IsAnApp: boolean;
-  IsAScolarProject: boolean;
 };
 
 const instances: Instance[] = [
@@ -27,10 +23,6 @@ const instances: Instance[] = [
     Image2Link: "",
     HostLink: "https://claq.fr/host/dinautt",
     GithubRepoLink: "https://github.com/Claquettes/auttgames/tree/main/dinautt",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //2nd instance
   {
@@ -45,10 +37,6 @@ const instances: Instance[] = [
     GithubRepoLink:
       "https://github.com/Claquettes/auttgames/tree/main/views/2048",
     HostLink: "https://claq.fr/2048",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //3rd instance
   {
@@ -62,10 +50,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://claq.fr/envoie",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //4th instance
   {
@@ -79,10 +63,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Snak-autt",
     HostLink: "https://claquettes.github.io/Snak-autt/",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //5th instance
   {
@@ -96,26 +76,18 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/casse-briques",
     HostLink: "https://claq.fr/casse-briques",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //6th instance
   {
     name: "PolyDarts",
     Author: "Mathieu Ponton | Maxime Antoine",
-    Content: `Made using react-native with <a href="https://www.maxime-antoine.fr/">Maxime Antoine</a>, Polydarts is a mobile application that helps dart players to keep track of their scores. The user can choose between different games (301, 501, Cricket, etc...) but also between "fun modes" (golden carrot, catch the rabbit, etc...). The application also contains stats about the player's games. The goal is to help players keep track of their scores, stats, and also to create a new way to play darts with the fun modes.`,
+    Content: `Made using react-native with Maxime Antoine, Polydarts is a mobile application that helps dart players to keep track of their scores. The user can choose between different games (301, 501, Cricket, etc...) but also between "fun modes" (golden carrot, catch the rabbit, etc...). The application also contains stats about the player's games. The goal is to help players keep track of their scores, stats, and also to create a new way to play darts with the fun modes.`,
     Date: "2023-01-17",
     Language: "ReactNative",
     Image1Link: "https://claq.fr/host/Polydarts.png",
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Polydarts",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: false,
-    IsAnApp: true,
-    IsAScolarProject: false,
   },
   //7th instance
   {
@@ -130,10 +102,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Polyressources",
     HostLink: "https://claq.fr/polyressources",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //8th instance
   {
@@ -148,10 +116,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/mathi.eu",
     HostLink: "https://ponton-mathi.eu",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //9th instance
   {
@@ -165,10 +129,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/ratio-generateur",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //10th instance
   {
@@ -182,10 +142,6 @@ const instances: Instance[] = [
     Image2Link: "https://media.giphy.com/media/8mjdhnujKhJRdK5BwM/giphy.gif",
     GithubRepoLink: "https://github.com/Claquettes/Claquetix",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //11th instance
   {
@@ -199,10 +155,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Claquipedia",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //12th instance
   {
@@ -216,10 +168,6 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/garden-creation.png",
     GithubRepoLink: "https://github.com/AuttGamesTeam/Autt-Garden",
     HostLink: "https://claq.fr/garden",
-    IsAWebsite: true,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //13th instance
   {
@@ -233,10 +181,6 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/planet.png",
     GithubRepoLink: "https://github.com/Claquettes/Planetarium",
     HostLink: "https://claquettes.github.io/Planetarium/",
-    IsAWebsite: true,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //14th instance
   {
@@ -250,10 +194,6 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/miso2.gif",
     GithubRepoLink: "https://github.com/Miso-Mania/Game",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: true,
   },
   //15th instance
   {
@@ -267,10 +207,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: true,
+    CoAuthors: ["Jules Ginhac", "Maxime Antoine"],
   },
   //16th instance
   {
@@ -284,10 +221,6 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/listd.png",
     GithubRepoLink: "",
     HostLink: "",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //17th instance
   {
@@ -302,10 +235,6 @@ const instances: Instance[] = [
     GithubRepoLink: "",
     HostLink:
       "https://marketplace.visualstudio.com/items?itemName=Claquettes.cat-wisdom",
-    IsAWebsite: false,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //18th instance
   {
@@ -319,10 +248,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: true,
   },
   //19th instance
   {
@@ -336,10 +261,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://ponton-mathi.eu/blog",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //20th instance
   {
@@ -353,10 +274,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //21th instance
   {
@@ -370,10 +287,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/RythmClaq-",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //22th instance
   {
@@ -387,10 +300,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
-    IsAWebsite: false,
-    IsAGame: false,
-    IsAnApp: true,
-    IsAScolarProject: false,
   },
   //23th instance
   {
@@ -404,10 +313,6 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/elementbox2.gif",
     GithubRepoLink: "https://claquettes.github.io/ElementBox/",
     HostLink: "https://github.com/Claquettes/SandBox",
-    IsAWebsite: false,
-    IsAGame: true,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //24th instance
   {
@@ -421,10 +326,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://prodbyfzu.fr",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
   //25th instance
   {
@@ -438,10 +339,6 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://letacotoque.fr",
-    IsAWebsite: true,
-    IsAGame: false,
-    IsAnApp: false,
-    IsAScolarProject: false,
   },
 ];
 

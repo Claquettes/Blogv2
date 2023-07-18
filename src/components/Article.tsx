@@ -3,6 +3,13 @@ import TopBarArticle from "./TopBarArticle";
 //we import the css file
 import "./styles/Article.css";
 
+//we define the card Component
+
+import CardProfile from "./CardProfile";
+import { Row } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+
 interface Article {
   //visibles to the outside
   Title: string;
@@ -17,6 +24,8 @@ interface Article {
 
   GithubRepoLink: string;
   HostLink: string;
+
+  CoAuthors?: string[];
 
   //internal
   IsVisible: boolean;
@@ -34,6 +43,7 @@ function MyComponent(props: Article) {
     Image2Link,
     GithubRepoLink,
     HostLink,
+    CoAuthors,
   } = props;
 
   function getBadgeUrls(language: string): string[] | undefined {
@@ -110,6 +120,18 @@ function MyComponent(props: Article) {
           <p>{Content}</p>
         </div>
       </div>
+
+      {CoAuthors && (
+        <div className="article-co-authors">
+          <p>Co-authors:</p>
+          <span className="article-co-authors-list">
+            {CoAuthors.map((coAuthor, index) => (
+              <CardProfile key={index} Name={coAuthor} />
+            ))}
+          </span>
+        </div>
+      )}
+
       <div className="article-links">
         <a href={GithubRepoLink}>Github Repo</a>
         <a href={HostLink}>Host Link</a>

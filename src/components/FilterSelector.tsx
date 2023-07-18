@@ -10,12 +10,20 @@ interface FilterSelectorProps {
   onLanguageChange: (language: string) => void;
   onOrderChange: (order: string) => void;
   onYearChange: (year: string | null) => void;
+  onShowOnlyWebsites: () => void;
+  onShowOnlyGames: () => void;
+  onShowOnlyApps: () => void;
+  onShowOnlyScolar: () => void;
 }
 
 function FilterSelector({
   onLanguageChange,
   onOrderChange,
   onYearChange,
+  onShowOnlyWebsites,
+  onShowOnlyGames,
+  onShowOnlyApps,
+  onShowOnlyScolar,
 }: FilterSelectorProps) {
   const handleLanguageChange = (language: string) => {
     onLanguageChange(language);
@@ -27,6 +35,22 @@ function FilterSelector({
 
   const handleYearChange = (year: string | null) => {
     onYearChange(year);
+  };
+
+  const handleShowOnlyWebsites = () => {
+    onShowOnlyWebsites();
+  };
+
+  const handleShowOnlyGames = () => {
+    onShowOnlyGames();
+  };
+
+  const handleShowOnlyApps = () => {
+    onShowOnlyApps();
+  };
+
+  const handleShowOnlyScolar = () => {
+    onShowOnlyScolar();
   };
 
   return (
@@ -102,19 +126,18 @@ function FilterSelector({
         <Dropdown.Item eventKey="2022" onClick={() => handleYearChange("2022")}>
           2022
         </Dropdown.Item>
-        {/* You can add more years as needed */}
       </DropdownButton>
-      <DropdownButton
-        as={ButtonGroup}
-        title="Show only"
-        id="bg-nested-dropdown"
+      <Button
+        variant="outline-secondary"
         className="custom-button"
+        onClick={() => {
+          handleLanguageChange("");
+          handleOrderChange("chronoOrder");
+          handleYearChange(null);
+        }}
       >
-        <Dropdown.Item eventKey="websites">Websites</Dropdown.Item>
-        <Dropdown.Item eventKey="games">Games</Dropdown.Item>
-        <Dropdown.Item eventKey="apps">Apps</Dropdown.Item>
-        <Dropdown.Item eventKey="scolar">Scolar Projects</Dropdown.Item>
-      </DropdownButton>
+        Reset All Filters
+      </Button>
     </ButtonGroup>
   );
 }

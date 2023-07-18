@@ -18,6 +18,7 @@ interface Instance {
   GithubRepoLink: string;
   HostLink: string;
   IsVisible: boolean;
+  CoAuthors: string[];
 }
 
 function App() {
@@ -36,12 +37,20 @@ function App() {
   };
 
   const handleOrderChange = (order: string) => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
     if (order === "reverseChronoOrder") {
       setArticles([...articles].reverse());
     }
   };
 
   const handleYearChange = (year: string | null) => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
     setSelectedYear(year);
   };
 
@@ -54,8 +63,12 @@ function App() {
       return false;
     }
 
+    // Check the correct properties for each filter category
     return true;
   });
+
+  //we reverse instances to have the most recent first
+  const reversedArticles = filteredArticles.reverse();
 
   return (
     <>
@@ -86,6 +99,7 @@ function App() {
                 GithubRepoLink={instance.GithubRepoLink}
                 HostLink={instance.HostLink}
                 IsVisible={true}
+                CoAuthors={instance.CoAuthors}
               />
             ))}
           </div>
