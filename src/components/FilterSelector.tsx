@@ -9,11 +9,13 @@ import "./styles/FilterSelector.css";
 interface FilterSelectorProps {
   onLanguageChange: (language: string) => void;
   onOrderChange: (order: string) => void;
+  onYearChange: (year: string | null) => void;
 }
 
 function FilterSelector({
   onLanguageChange,
   onOrderChange,
+  onYearChange,
 }: FilterSelectorProps) {
   const handleLanguageChange = (language: string) => {
     onLanguageChange(language);
@@ -21,6 +23,10 @@ function FilterSelector({
 
   const handleOrderChange = (order: string) => {
     onOrderChange(order);
+  };
+
+  const handleYearChange = (year: string | null) => {
+    onYearChange(year);
   };
 
   return (
@@ -90,8 +96,13 @@ function FilterSelector({
         id="bg-nested-dropdown"
         className="custom-button"
       >
-        <Dropdown.Item eventKey="2023">2023</Dropdown.Item>
-        <Dropdown.Item eventKey="2022">2022</Dropdown.Item>
+        <Dropdown.Item eventKey="2023" onClick={() => handleYearChange("2023")}>
+          2023
+        </Dropdown.Item>
+        <Dropdown.Item eventKey="2022" onClick={() => handleYearChange("2022")}>
+          2022
+        </Dropdown.Item>
+        {/* You can add more years as needed */}
       </DropdownButton>
       <DropdownButton
         as={ButtonGroup}

@@ -24,6 +24,7 @@ function App() {
   const [filteredLanguage, setFilteredLanguage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [articles, setArticles] = useState<Instance[]>(instances);
+  const [selectedYear, setSelectedYear] = useState<string | null>(null);
 
   const handleLanguageChange = (language: string) => {
     setIsLoading(true);
@@ -40,9 +41,21 @@ function App() {
     }
   };
 
-  const filteredArticles = filteredLanguage
-    ? articles.filter((instance) => instance.Language === filteredLanguage)
-    : articles;
+  const handleYearChange = (year: string | null) => {
+    setSelectedYear(year);
+  };
+
+  const filteredArticles = articles.filter((instance) => {
+    if (filteredLanguage && instance.Language !== filteredLanguage) {
+      return false;
+    }
+
+    if (selectedYear && !instance.Date.startsWith(selectedYear)) {
+      return false;
+    }
+
+    return true;
+  });
 
   return (
     <>
@@ -52,6 +65,7 @@ function App() {
           <FilterSelector
             onLanguageChange={handleLanguageChange}
             onOrderChange={handleOrderChange}
+            onYearChange={handleYearChange}
           />
         </div>
 
