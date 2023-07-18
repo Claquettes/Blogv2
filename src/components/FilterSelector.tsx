@@ -1,18 +1,26 @@
+import React from "react";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
-import React, { useState } from "react";
 
 import "./styles/FilterSelector.css";
 
 interface FilterSelectorProps {
   onLanguageChange: (language: string) => void;
+  onOrderChange: (order: string) => void;
 }
 
-function NestedExample({ onLanguageChange }: FilterSelectorProps) {
+function FilterSelector({
+  onLanguageChange,
+  onOrderChange,
+}: FilterSelectorProps) {
   const handleLanguageChange = (language: string) => {
     onLanguageChange(language);
+  };
+
+  const handleOrderChange = (order: string) => {
+    onOrderChange(order);
   };
 
   return (
@@ -23,10 +31,16 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
         id="bg-nested-dropdown"
         className="custom-button"
       >
-        <Dropdown.Item eventKey="chronoOrder">
+        <Dropdown.Item
+          eventKey="chronoOrder"
+          onClick={() => handleOrderChange("chronoOrder")}
+        >
           Chronological Order
         </Dropdown.Item>
-        <Dropdown.Item eventKey="reverseChronoOrder">
+        <Dropdown.Item
+          eventKey="reverseChronoOrder"
+          onClick={() => handleOrderChange("reverseChronoOrder")}
+        >
           Reverse Chronological Order
         </Dropdown.Item>
       </DropdownButton>
@@ -94,4 +108,4 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
   );
 }
 
-export default NestedExample;
+export default FilterSelector;

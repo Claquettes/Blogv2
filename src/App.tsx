@@ -1,22 +1,32 @@
 import React, { useState } from "react";
-//components
 import TopBar from "./components/TopBar";
 import Article from "./components/Article";
 import FilterSelector from "./components/FilterSelector";
 import CustomSpinner from "./components/CustomSpinner";
+import instances from "./Instances";
 
-//we import the css file
 import "./App.css";
 
-//we import the instances
-import instances from "./Instances";
+interface Instance {
+  name: string;
+  Author: string;
+  Date: string;
+  Language: string;
+  Content: string;
+  Image1Link: string;
+  Image2Link: string;
+  GithubRepoLink: string;
+  HostLink: string;
+  IsVisible: boolean;
+}
 
 function App() {
   const [filteredLanguage, setFilteredLanguage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [articles, setArticles] = useState<Instance[]>(instances);
 
   const handleLanguageChange = (language: string) => {
     setIsLoading(true);
-    //we wait 1 second to simulate a real request
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
@@ -24,21 +34,29 @@ function App() {
     setFilteredLanguage(language);
   };
 
+  const handleOrderChange = (order: string) => {
+    if (order === "reverseChronoOrder") {
+      setArticles([...articles].reverse());
+    }
+  };
+
   const filteredArticles = filteredLanguage
-    ? instances.filter((instance) => instance.Language === filteredLanguage)
-    : instances;
-  const [isLoading, setIsLoading] = useState(false);
+    ? articles.filter((instance) => instance.Language === filteredLanguage)
+    : articles;
 
   return (
     <>
       <TopBar />
       <div>
         <div className="FilterSelectorContainer">
-          <FilterSelector onLanguageChange={handleLanguageChange} />
+          <FilterSelector
+            onLanguageChange={handleLanguageChange}
+            onOrderChange={handleOrderChange}
+          />
         </div>
 
         {isLoading ? (
-          <CustomSpinner /> //we display the spinner if the data is loading
+          <CustomSpinner />
         ) : (
           <div className="Articles-container">
             {filteredArticles.map((instance, index) => (
