@@ -153,6 +153,40 @@ const instances: Instance[] = [
     IsAnApp: false,
     IsAScolarProject: false,
   },
+  //9th instance
+  {
+    name: "Ratio-Generateur",
+    Author: "Mathieu Ponton",
+    Content:
+      "A python script to generate -ratios-. It will generate a sentence starting with -ratio +- and then a random word from a list of words. The goal is to make a funny sentence. The library of words is composed of popular internet references, memes, french expressions and inside jokes from Polytech Lyon's students. Uku3lig helped me to tweak the script to make it work better. The GUI was made using Tkinter.",
+    Date: "2023-03-13",
+    Language: "Python",
+    Image1Link: "https://claq.fr/host/ratio.png",
+    Image2Link: "",
+    GithubRepoLink: "https://github.com/Claquettes/ratio-generateur",
+    HostLink: "",
+    IsAWebsite: false,
+    IsAGame: false,
+    IsAnApp: false,
+    IsAScolarProject: false,
+  },
+  //10th instance
+  {
+    name: "Claquettix",
+    Author: "Mathieu Ponton | Antonin Sylverstre",
+    Content:
+      "A script made with Selenium in Python to help the player wins at the game Pedantix using brute force. The script imput a selection of words to fill the blanks and give the player a huge boost at the beginning of the game. Antonin Sylvestre helped me by writting a script to pick the best words from a 600 000 words dictionnary. The GUI was made using Tkinter, and it allows the user to choose the number of words he wants to input and start the script.",
+    Date: "2023-03-20",
+    Language: "Python",
+    Image1Link: "https://claq.fr/host/claquetix.png",
+    Image2Link: "https://media.giphy.com/media/8mjdhnujKhJRdK5BwM/giphy.gif",
+    GithubRepoLink: "https://github.com/Claquettes/Claquetix",
+    HostLink: "",
+    IsAWebsite: false,
+    IsAGame: false,
+    IsAnApp: false,
+    IsAScolarProject: false,
+  },
 ];
 
 export default instances;
