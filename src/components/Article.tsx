@@ -6,7 +6,6 @@ import "./styles/Article.css";
 interface Article {
   //visibles to the outside
   Title: string;
-  Id: number;
   Author: string;
   Date: string;
   Language: string;
@@ -26,7 +25,6 @@ interface Article {
 function MyComponent(props: Article) {
   const {
     Title,
-    Id,
     Author,
     Date,
     Language,

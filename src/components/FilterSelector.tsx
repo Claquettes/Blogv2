@@ -66,6 +66,12 @@ function NestedExample({ onLanguageChange }: FilterSelectorProps) {
         >
           PHP
         </Dropdown.Item>
+        <Dropdown.Item
+          eventKey="reset"
+          onClick={() => handleLanguageChange("")}
+        >
+          Reset Filter
+        </Dropdown.Item>
       </DropdownButton>
       <DropdownButton
         as={ButtonGroup}
