@@ -156,7 +156,7 @@ const instances: Instance[] = [
   //9th instance
   {
     name: "Ratio-Generateur",
-    Author: "Mathieu Ponton",
+    Author: "Mathieu Ponton | Uku3lig",
     Content:
       "A python script to generate -ratios-. It will generate a sentence starting with -ratio +- and then a random word from a list of words. The goal is to make a funny sentence. The library of words is composed of popular internet references, memes, french expressions and inside jokes from Polytech Lyon's students. Uku3lig helped me to tweak the script to make it work better. The GUI was made using Tkinter.",
     Date: "2023-03-13",
@@ -183,6 +183,108 @@ const instances: Instance[] = [
     GithubRepoLink: "https://github.com/Claquettes/Claquetix",
     HostLink: "",
     IsAWebsite: false,
+    IsAGame: false,
+    IsAnApp: false,
+    IsAScolarProject: false,
+  },
+  //11th instance
+  {
+    name: "Claquipedia",
+    Author: "Mathieu Ponton",
+    Content:
+      "Another Python script with a gui made with Tkinter. This script is a Wikipedia scraper that allows the user to search for a word and then the script will return the text from the Wikipedia page. The script also allows the user to copy and paste in one click the text from the Wikipedia page. The user can choose between 8 languages. It was designed to troll my friends on Discord.",
+    Date: "2023-03-25",
+    Language: "Python",
+    Image1Link: "https://claq.fr/host/claquipedia.png",
+    Image2Link: "",
+    GithubRepoLink: "https://github.com/Claquettes/Claquipedia",
+    HostLink: "",
+    IsAWebsite: false,
+    IsAGame: false,
+    IsAnApp: false,
+    IsAScolarProject: false,
+  },
+  //12th instance
+  {
+    name: "AuttGarden",
+    Author: "Mathieu Ponton | AuttGames",
+    Content:
+      "It's a calm and relaxing game where you can make your own tiny island/garden. You have the ability to export/import every creation you make, and share it with your friends. The project was started by myself, but other members (FlashOnFire, Sun and Tibouyou) of the AuttGames Team joined me later. Together we added more than 100 differents tiles, the ability to change the size of the island, a day night cycle, and way more! It was made using Js canvas. The exemple island you see above was made by Sun. The site also has a lofi playlist embeded, using a soundcloud iframe.",
+    Date: "2023-04-12",
+    Language: "Js",
+    Image1Link: "https://claq.fr/host/garden.png",
+    Image2Link: "https://claq.fr/host/garden-creation.png",
+    GithubRepoLink: "https://github.com/AuttGamesTeam/Autt-Garden",
+    HostLink: "https://claq.fr/garden",
+    IsAWebsite: true,
+    IsAGame: true,
+    IsAnApp: false,
+    IsAScolarProject: false,
+  },
+  //13th instance
+  {
+    name: "Planetarium",
+    Author: "Mathieu Ponton",
+    Content:
+      "A fork from The Garden. This is a 0 player game inspired by Conway's Game of Life. The game randomly generate a planet with a random quantity of water, grass, mountains and sand. The player has the capacity to place 5 populations tiles, that will evolve and grow depending on the quantity of water, grass, mountains and sand around them. The goal is to create a planet with a maximum of population.It's still in developpement.",
+    Date: "2023-05-06",
+    Language: "Js",
+    Image1Link: "https://claq.fr/host/planet-empty.png",
+    Image2Link: "https://claq.fr/host/planet.png",
+    GithubRepoLink: "https://github.com/Claquettes/Planetarium",
+    HostLink: "https://claquettes.github.io/Planetarium/",
+    IsAWebsite: true,
+    IsAGame: true,
+    IsAnApp: false,
+    IsAScolarProject: false,
+  },
+  //14th instance
+  {
+    name: "Miso Mania!",
+    Author: "Mathieu Ponton | Jules Ginhac | Romain Rochebloine",
+    Content:
+      " Project carried out as part of the EU LIFAP4 at the University Claude Bernard Lyon 1, as part of our second year of preparatory courses for Polytech engineering schools (Peip). The lectures for this teaching unit were provided by Alexandre Meyer and Nicolas Pronost, both researchers at LIRIS, a CNRS laboratory. Miso Mania is a 2D platform game. This game is at the crossroads, between platform game and die and retry. The player controls a character who must reach the end of the level. The game feature a level editor, a level sharing system as well as a leaderboard. Miso Mania allows the player to create an user inside of the game, and this user can purchase skins for the character, and can also purchase particles. The coins are earned by completing levels, and the closer the player is to the top of the leaderboard, the more coins he will earn. The game is distributed on WSL, Mac and Linux. The game was created using SDL2 library and C++ by Romain Rochebloine, Jules Ginhac and myself. For this project, we were ranked 3rd out of 68 groups, with a grade of 18.42/20.",
+    Date: "2023-01/2023-05",
+    Language: "C++",
+    Image1Link: "https://claq.fr/host/miso1.gif",
+    Image2Link: "https://claq.fr/host/miso2.gif",
+    GithubRepoLink: "https://github.com/Miso-Mania/Game",
+    HostLink: "",
+    IsAWebsite: false,
+    IsAGame: true,
+    IsAnApp: false,
+    IsAScolarProject: true,
+  },
+  //15th instance
+  {
+    name: "Info4",
+    Author: "Mathieu Ponton | Jules Ginhac | Maxime Antoine | Pablo Verchère",
+    Content:
+      " Project carried out as part of my studies at Polytech Lyon, with Maxime Antoine,Jules Ginhac and Pablo Verchère under the supervision of M. Bonnevay Stéphane. The goal of the project was to develop a python program to find the shortest path between 100 points on a map. This project was a version of The Salesman problem (TSP). The program allowed the user to choose between 1 truck to deliver all of the points, or multiple trucks. The program was developed using the python library Turtle, and the algorithm used was the nearest neighbor algorithm for the initial solution, and 2-opt, relocate and swap for the local search. All of the algorithms were developed by us. The program had a GUI, that showed in real time the current best path. All of the data was saved in .xlsx files to allow us to analyze the results. For this project, we were ranked 1 out of 40 groups, with a grade of 19/20.",
+    Date: "2023-04/2023-05",
+    Language: "Python",
+    Image1Link: "https://claq.fr/host/info.gif",
+    Image2Link: "",
+    GithubRepoLink: "",
+    HostLink: "",
+    IsAWebsite: false,
+    IsAGame: false,
+    IsAnApp: false,
+    IsAScolarProject: true,
+  },
+  //16th instance
+  {
+    name: "TodoList",
+    Author: "Mathieu Ponton",
+    Content:
+      "This project was my first using angular. The goal was to create a todo list, to make us of angular's components. The user can add tasks, delete them, and mark them as done. I implemented a dark mode using 'providers' and services.",
+    Date: "2023-05",
+    Language: "Angular",
+    Image1Link: "https://claq.fr/host/list1.png",
+    Image2Link: "https://claq.fr/host/listd.png",
+    GithubRepoLink: "",
+    HostLink: "",
+    IsAWebsite: true,
     IsAGame: false,
     IsAnApp: false,
     IsAScolarProject: false,
