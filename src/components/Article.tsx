@@ -67,7 +67,12 @@ function MyComponent(props: Article) {
       bootstrap: [
         "https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white",
       ],
+      php: [
+        "https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white",
+      ],
     };
+
+    if (Language === "C++") return badges["cpp"];
 
     return badges[language.toLowerCase()];
   }
