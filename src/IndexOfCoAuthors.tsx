@@ -21,5 +21,4 @@ const coAuthors = [
     SecondndLink: "https://www.instagram.com/antosyl/",
   },
 ];
-
 export default coAuthors;
