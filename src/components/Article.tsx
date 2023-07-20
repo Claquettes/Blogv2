@@ -2,6 +2,8 @@ import TopBarArticle from "./TopBarArticle";
 
 //we import the css file
 import "./styles/Article.css";
+import "./styles/TopBarArticle.css";
+import "./styles/CardProfile.css";
 
 //we define the card Component
 
@@ -122,7 +124,7 @@ function MyComponent(props: Article) {
 
       {CoAuthors && (
         <div className="article-co-authors">
-          <p>Co-authors:</p>
+          <h3>Co-authors:</h3>
           <Row className="article-co-authors-list">
             {CoAuthors.map((coAuthor, index) => (
               <Col key={index}>

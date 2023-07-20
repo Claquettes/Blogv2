@@ -88,6 +88,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Polydarts",
     HostLink: "",
+    CoAuthors: ["Maxime Antoine"],
   },
   //7th instance
   {
@@ -102,6 +103,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Polyressources",
     HostLink: "https://claq.fr/polyressources",
+    CoAuthors: ["Guillaume Calderon"],
   },
   //8th instance
   {
@@ -129,6 +131,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/ratio-generateur",
     HostLink: "",
+    CoAuthors: ["Uku3Lig"],
   },
   //10th instance
   {
@@ -142,6 +145,7 @@ const instances: Instance[] = [
     Image2Link: "https://media.giphy.com/media/8mjdhnujKhJRdK5BwM/giphy.gif",
     GithubRepoLink: "https://github.com/Claquettes/Claquetix",
     HostLink: "",
+    CoAuthors: ["Antonin Sylvestre"],
   },
   //11th instance
   {
