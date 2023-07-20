@@ -136,8 +136,8 @@ function MyComponent(props: Article) {
       )}
 
       <div className="article-links">
-        <a href={GithubRepoLink}>Github Repo</a>
-        <a href={HostLink}>Host Link</a>
+        <a href={GithubRepoLink}>{GithubRepoLink && <h3>Github Repo</h3>}</a>
+        <a href={HostLink}>{HostLink && <h3>Host Link</h3>}</a>
       </div>
     </div>
   );

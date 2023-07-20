@@ -106,7 +106,12 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Polyressources",
     HostLink: "https://claq.fr/polyressources",
-    CoAuthors: ["Guillaume Calderon", "Romain Rochebloine", "Clément Viris"],
+    CoAuthors: [
+      "Guillaume Calderon",
+      "Romain Rochebloine",
+      "Clément Viris",
+      "Dorian Tonnis",
+    ],
   },
   //8th instance
   {
