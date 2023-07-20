@@ -5,10 +5,9 @@ import "./styles/Article.css";
 
 //we define the card Component
 
-import CardProfile from "./CardProfile";
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
+import CardProfile from "./CardProfile";
 
 interface Article {
   //visibles to the outside
@@ -124,11 +123,13 @@ function MyComponent(props: Article) {
       {CoAuthors && (
         <div className="article-co-authors">
           <p>Co-authors:</p>
-          <span className="article-co-authors-list">
+          <Row className="article-co-authors-list">
             {CoAuthors.map((coAuthor, index) => (
-              <CardProfile key={index} Name={coAuthor} />
+              <Col key={index}>
+                <CardProfile Name={coAuthor} />
+              </Col>
             ))}
-          </span>
+          </Row>
         </div>
       )}
 
