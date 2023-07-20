@@ -20,5 +20,17 @@ const coAuthors = [
     GithubLink: "https://github.com/antonin-slv",
     SecondndLink: "https://www.instagram.com/antosyl/",
   },
+  {
+    Name: "Uku3Lig",
+    Image: "https://avatars.githubusercontent.com/u/61147779?v=4",
+    GithubLink: "https://github.com/uku3lig",
+    SecondndLink: "https://www.instagram.com/uku3lig/",
+  },
+  {
+    Name: "Guillaume Calderon",
+    Image: "https://avatars.githubusercontent.com/u/26602207?v=4",
+    GithubLink: "https://github.com/FlashOnFire",
+    SecondndLink: "https://www.instagram.com/guillaume.calderon/",
+  },
 ];
 export default coAuthors;
