@@ -22,10 +22,7 @@ function CardProfile(props: CardProfileProps) {
       <Card.Body>
         <Card.Title>{Name}</Card.Title>
         <Card.Img variant="top" src={Image} />
-        <Card.Text>
-          PlaceHolder Text to be replaced by the description
-          <br />
-        </Card.Text>
+        <Card.Text>{coAuthor.Text}</Card.Text>
         <Card.Link href="{GithubLink}">Github</Card.Link>
         <Card.Link href="{SecondndLink}">Website</Card.Link>
       </Card.Body>

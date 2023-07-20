@@ -23,6 +23,7 @@ const instances: Instance[] = [
     Image2Link: "",
     HostLink: "https://claq.fr/host/dinautt",
     GithubRepoLink: "https://github.com/Claquettes/auttgames/tree/main/dinautt",
+    CoAuthors: ["Guillaume Calderon", "Alexandre Honoré"],
   },
   //2nd instance
   {
@@ -37,6 +38,7 @@ const instances: Instance[] = [
     GithubRepoLink:
       "https://github.com/Claquettes/auttgames/tree/main/views/2048",
     HostLink: "https://claq.fr/2048",
+    CoAuthors: ["Guillaume Calderon", "Alexandre Honoré"],
   },
   //3rd instance
   {
@@ -50,6 +52,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://claq.fr/envoie",
+    CoAuthors: ["Guillaume Calderon", "Alexandre Honoré"],
   },
   //4th instance
   {
@@ -103,7 +106,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Polyressources",
     HostLink: "https://claq.fr/polyressources",
-    CoAuthors: ["Guillaume Calderon"],
+    CoAuthors: ["Guillaume Calderon", "Romain Rochebloine", "Clément Viris"],
   },
   //8th instance
   {
@@ -172,6 +175,7 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/garden-creation.png",
     GithubRepoLink: "https://github.com/AuttGamesTeam/Autt-Garden",
     HostLink: "https://claq.fr/garden",
+    CoAuthors: ["Guillaume Calderon", "Alexandre Honoré"],
   },
   //13th instance
   {
@@ -198,6 +202,7 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/miso2.gif",
     GithubRepoLink: "https://github.com/Miso-Mania/Game",
     HostLink: "",
+    CoAuthors: ["Jules Ginhac", "Romain Rochebloine"],
   },
   //15th instance
   {
@@ -211,7 +216,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
-    CoAuthors: ["Jules Ginhac", "Maxime Antoine"],
+    CoAuthors: ["Jules Ginhac", "Maxime Antoine", "Pablo Verchère"],
   },
   //16th instance
   {
@@ -252,6 +257,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
+    CoAuthors: ["Jules Ginhac"],
   },
   //19th instance
   {
@@ -278,6 +284,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
+    CoAuthors: ["Maxime Antoine"],
   },
   //21th instance
   {
