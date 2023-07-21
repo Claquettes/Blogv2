@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DropdownButton from "react-bootstrap/DropdownButton";
@@ -10,20 +9,12 @@ interface FilterSelectorProps {
   onLanguageChange: (language: string) => void;
   onOrderChange: (order: string) => void;
   onYearChange: (year: string | null) => void;
-  onShowOnlyWebsites: () => void;
-  onShowOnlyGames: () => void;
-  onShowOnlyApps: () => void;
-  onShowOnlyScolar: () => void;
 }
 
 function FilterSelector({
   onLanguageChange,
   onOrderChange,
   onYearChange,
-  onShowOnlyWebsites,
-  onShowOnlyGames,
-  onShowOnlyApps,
-  onShowOnlyScolar,
 }: FilterSelectorProps) {
   const handleLanguageChange = (language: string) => {
     onLanguageChange(language);
@@ -35,22 +26,6 @@ function FilterSelector({
 
   const handleYearChange = (year: string | null) => {
     onYearChange(year);
-  };
-
-  const handleShowOnlyWebsites = () => {
-    onShowOnlyWebsites();
-  };
-
-  const handleShowOnlyGames = () => {
-    onShowOnlyGames();
-  };
-
-  const handleShowOnlyApps = () => {
-    onShowOnlyApps();
-  };
-
-  const handleShowOnlyScolar = () => {
-    onShowOnlyScolar();
   };
 
   return (

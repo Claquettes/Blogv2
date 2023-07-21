@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TopBar from "./components/TopBar";
 import Article from "./components/Article";
 import FilterSelector from "./components/FilterSelector";
 import CustomSpinner from "./components/CustomSpinner";
 import instances from "./Instances";
-
 import "./App.css";
 
 interface Instance {
@@ -17,7 +16,6 @@ interface Instance {
   Image2Link: string;
   GithubRepoLink: string;
   HostLink: string;
-  IsVisible: boolean;
   CoAuthors: string[];
 }
 
@@ -67,9 +65,6 @@ function App() {
     return true;
   });
 
-  //we reverse instances to have the most recent first
-  const reversedArticles = filteredArticles.reverse();
-
   return (
     <>
       <TopBar />
@@ -98,7 +93,6 @@ function App() {
                 Image2Link={instance.Image2Link}
                 GithubRepoLink={instance.GithubRepoLink}
                 HostLink={instance.HostLink}
-                IsVisible={true}
                 CoAuthors={instance.CoAuthors}
               />
             ))}

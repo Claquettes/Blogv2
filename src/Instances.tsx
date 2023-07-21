@@ -8,6 +8,7 @@ type Instance = {
   Image2Link: string; // Make Image2Link optional using `?`
   GithubRepoLink: string; // Make GithubRepoLink optional using `?`
   HostLink: string;
+  CoAuthors: string[];
 };
 
 const instances: Instance[] = [
@@ -66,6 +67,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Snak-autt",
     HostLink: "https://claquettes.github.io/Snak-autt/",
+    CoAuthors: [""],
   },
   //5th instance
   {
@@ -79,6 +81,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/casse-briques",
     HostLink: "https://claq.fr/casse-briques",
+    CoAuthors: [""],
   },
   //6th instance
   {
@@ -126,6 +129,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/mathi.eu",
     HostLink: "https://ponton-mathi.eu",
+    CoAuthors: [""],
   },
   //9th instance
   {
@@ -167,6 +171,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/Claquipedia",
     HostLink: "",
+    CoAuthors: [""],
   },
   //12th instance
   {
@@ -194,6 +199,7 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/planet.png",
     GithubRepoLink: "https://github.com/Claquettes/Planetarium",
     HostLink: "https://claquettes.github.io/Planetarium/",
+    CoAuthors: [""],
   },
   //14th instance
   {
@@ -235,6 +241,7 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/listd.png",
     GithubRepoLink: "",
     HostLink: "",
+    CoAuthors: [""],
   },
   //17th instance
   {
@@ -249,6 +256,7 @@ const instances: Instance[] = [
     GithubRepoLink: "",
     HostLink:
       "https://marketplace.visualstudio.com/items?itemName=Claquettes.cat-wisdom",
+    CoAuthors: [""],
   },
   //18th instance
   {
@@ -276,6 +284,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://ponton-mathi.eu/blog",
+    CoAuthors: [""],
   },
   //20th instance
   {
@@ -303,6 +312,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "https://github.com/Claquettes/RythmClaq-",
     HostLink: "",
+    CoAuthors: [""],
   },
   //22th instance
   {
@@ -316,6 +326,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "",
+    CoAuthors: [""],
   },
   //23th instance
   {
@@ -329,6 +340,7 @@ const instances: Instance[] = [
     Image2Link: "https://claq.fr/host/elementbox2.gif",
     GithubRepoLink: "https://claquettes.github.io/ElementBox/",
     HostLink: "https://github.com/Claquettes/SandBox",
+    CoAuthors: [""],
   },
   //24th instance
   {
@@ -342,6 +354,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://prodbyfzu.fr",
+    CoAuthors: [""],
   },
   //25th instance
   {
@@ -355,6 +368,7 @@ const instances: Instance[] = [
     Image2Link: "",
     GithubRepoLink: "",
     HostLink: "https://letacotoque.fr",
+    CoAuthors: [""],
   },
 ];
 

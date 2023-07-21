@@ -15,7 +15,7 @@ function CardProfile(props: CardProfileProps) {
   if (!coAuthor) {
     return null;
   }
-  const { Image, GithubLink, SecondndLink } = coAuthor;
+  const { Image } = coAuthor;
 
   return (
     <Card style={{ width: "18rem" }}>

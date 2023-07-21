@@ -8,7 +8,6 @@ import "./styles/CardProfile.css";
 //we define the card Component
 
 import { Row, Col } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
 import CardProfile from "./CardProfile";
 
 interface Article {
@@ -23,14 +22,14 @@ interface Article {
   Image1Link: string;
   Image2Link: string;
 
-  GithubRepoLink: string;
-  HostLink: string;
+  GithubRepoLink?: string;
+  HostLink?: string;
 
   CoAuthors?: string[];
 
   //internal
-  IsVisible: boolean;
-  LanguageBadge: string;
+  IsVisible?: boolean;
+  LanguageBadge?: string;
 }
 
 function MyComponent(props: Article) {
