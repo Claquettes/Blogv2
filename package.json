@@ -2,7 +2,7 @@
   "name": "react-test",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://claquettes.github.io/react-test/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -29,6 +29,7 @@
     "eslint": "^8.44.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.0"
   }
