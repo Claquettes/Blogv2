@@ -16,6 +16,9 @@ function CardProfile(props: CardProfileProps) {
     return null;
   }
   const { Image } = coAuthor;
+  // we get the links for the github and the website
+  const { GithubLink } = coAuthor;
+  const { SecondndLink } = coAuthor;
 
   return (
     <Card style={{ width: "18rem" }}>
@@ -23,8 +26,8 @@ function CardProfile(props: CardProfileProps) {
         <Card.Title>{Name}</Card.Title>
         <Card.Img variant="top" src={Image} />
         <Card.Text>{coAuthor.Text}</Card.Text>
-        <Card.Link href="{GithubLink}">Github</Card.Link>
-        <Card.Link href="{SecondndLink}">Website</Card.Link>
+        <Card.Link href={GithubLink}>Github</Card.Link>
+        <Card.Link href={SecondndLink}>Website</Card.Link>
       </Card.Body>
     </Card>
   );

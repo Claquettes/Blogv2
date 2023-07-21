@@ -34,3 +34,10 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+.btn-group{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

@@ -117,18 +117,21 @@ function MyComponent(props: Article) {
         </div>
       </div>
 
-      {CoAuthors && (
-        <div className="article-co-authors">
-          <h3>Co-authors:</h3>
-          <Row className="article-co-authors-list">
-            {CoAuthors.map((coAuthor, index) => (
-              <Col key={index}>
-                <CardProfile Name={coAuthor} />
-              </Col>
-            ))}
-          </Row>
-        </div>
-      )}
+      {
+        //we check if the article has co-authors by checking if the array is not '[""]'
+        CoAuthors && CoAuthors[0] !== "" && (
+          <div className="article-co-authors">
+            <h3>Co-authors:</h3>
+            <Row className="article-co-authors-list">
+              {CoAuthors.map((coAuthor, index) => (
+                <Col key={index}>
+                  <CardProfile Name={coAuthor} />
+                </Col>
+              ))}
+            </Row>
+          </div>
+        )
+      }
 
       <div className="article-links">
         <a href={GithubRepoLink}>{GithubRepoLink && <h3>Github Repo</h3>}</a>
