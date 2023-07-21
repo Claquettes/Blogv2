@@ -65,6 +65,9 @@ function App() {
     return true;
   });
 
+  //we reverse the array to have the most recent articles first
+  filteredArticles.reverse();
+
   return (
     <>
       <TopBar />
