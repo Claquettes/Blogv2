@@ -1,8 +1,8 @@
 {
-  "name": "react-test",
+  "name": "BlogV2",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://claquettes.github.io/react-test/",
+  "homepage": "https://claquettes.github.io/BlogV2",
   "type": "module",
   "scripts": {
     "dev": "vite",
