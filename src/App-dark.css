@@ -1,0 +1,26 @@
+.Articles-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.FilterSelectorContainer{
+  width: 64%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.FilterSelectorContainer:hover{
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: 1s;
+}
+
+a{
+  color: #333;
+}
