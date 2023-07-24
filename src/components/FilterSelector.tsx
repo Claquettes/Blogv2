@@ -102,17 +102,17 @@ function FilterSelector({
           2022
         </Dropdown.Item>
       </DropdownButton>
-      <Button
-        variant="outline-secondary"
+      <DropdownButton
+        as={ButtonGroup}
+        title="Reset all filters"
+        id="bg-nested-dropdown"
         className="custom-button"
         onClick={() => {
           handleLanguageChange("");
           handleOrderChange("chronoOrder");
           handleYearChange(null);
         }}
-      >
-        Reset All Filters
-      </Button>
+      ></DropdownButton>
     </ButtonGroup>
   );
 }

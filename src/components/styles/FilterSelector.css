@@ -41,3 +41,14 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.custom-button2{
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}

@@ -14,8 +14,8 @@ function BasicExample() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="https://ponton-mathi.eu">Home</Nav.Link>
+              <Nav.Link href="https://ponton-mathi.eu/blog">DevBlog</Nav.Link>
               <NavDropdown title="Socials" id="basic-nav-dropdown">
                 <NavDropdown.Item
                   href="https://www.linkedin.com/in/mathieu-ponton/"
@@ -47,6 +47,8 @@ function BasicExample() {
                   GitHub
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="https://ponton-mathi.eu">About Me</Nav.Link>
+              <Nav.Link href="https://ponton-mathi.eu">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
