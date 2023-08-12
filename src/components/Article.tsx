@@ -105,7 +105,9 @@ function MyComponent(props: Article) {
           />
         ))}
       <div className="article-meta">
-        <TopBarArticle Author={Author} Date={Date} Language={Language} />
+        <p className="article-author">{Author}</p>
+        <p className="article-date">{Date}</p>
+        <p className="article-language">{Language}</p>
       </div>
       <div className="article-content">
         <div className="article-content-images">
