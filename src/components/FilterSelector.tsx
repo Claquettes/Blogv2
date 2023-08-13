@@ -48,7 +48,7 @@ function FilterSelector({
           PHP
         </option>
         <option value="reset" onClick={() => handleLanguageChange("")}>
-          Reset Filter
+          All
         </option>
       </select>
 
@@ -77,11 +77,12 @@ function FilterSelector({
         >
           Reset
         </button>
+
         <button
-          id="reverse-order"
-          onClick={() => handleOrderChange("chronoOrder")}
+          id="chrono-order"
+          onClick={() => handleOrderChange("reverseChronoOrder")}
         >
-          Reverse Chronological Order
+          Reverse Order
         </button>
       </div>
     </div>
