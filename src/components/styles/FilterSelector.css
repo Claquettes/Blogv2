@@ -1,53 +1,40 @@
-.FilterSelector{
+.filter-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-container {
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    justify-content: space-between;
 }
 
-/* FilterSelector.css */
-
-
-.btn{
-    margin: 0 auto;
-    width: 50%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: white;
+button {
+    padding: 8px 15px;
     border: none;
-    border-radius: 4px;
-    padding: 1rem;
-    font-size: 1.2rem;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    transition: 0.5s;
-    background-color: aliceblue;
 }
 
-.dropdown-toggle{
-    background-color: aliceblue;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    padding: 1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn-group{
-    align-self: center;
-
-}
- 
-
-.custom-button2{
-    background-color: aliceblue;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    padding: 1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: 0.5s;
+button:hover {
+    background-color: #0056b3;
 }

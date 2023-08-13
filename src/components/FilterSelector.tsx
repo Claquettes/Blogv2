@@ -29,91 +29,62 @@ function FilterSelector({
   };
 
   return (
-    <ButtonGroup>
-      <DropdownButton
-        as={ButtonGroup}
-        title="Order by"
-        id="bg-nested-dropdown"
-        className="custom-button"
-      >
-        <Dropdown.Item
-          eventKey="chronoOrder"
+    <div className="filter-container">
+      <label htmlFor="language">Language:</label>
+      <select id="language">
+        <option value="c++" onClick={() => handleLanguageChange("C++")}>
+          C++
+        </option>
+        <option value="js" onClick={() => handleLanguageChange("Js")}>
+          JavaScript
+        </option>
+        <option value="python" onClick={() => handleLanguageChange("Python")}>
+          Python
+        </option>
+        <option value="ts" onClick={() => handleLanguageChange("TypeScript")}>
+          TypeScript
+        </option>
+        <option value="php" onClick={() => handleLanguageChange("PHP")}>
+          PHP
+        </option>
+        <option value="reset" onClick={() => handleLanguageChange("")}>
+          Reset Filter
+        </option>
+      </select>
+
+      <label htmlFor="date">Year</label>
+      <select id="date">
+        <option value="All" onClick={() => handleYearChange(null)}>
+          {" "}
+          All{" "}
+        </option>
+        <option value="2022" onClick={() => handleYearChange("2022")}>
+          2022
+        </option>
+        <option value="2023" onClick={() => handleYearChange("2023")}>
+          2023
+        </option>
+      </select>
+
+      <div className="button-container">
+        <button
+          id="reset-button"
+          onClick={() => {
+            handleLanguageChange("");
+            handleOrderChange("chronoOrder");
+            handleYearChange(null);
+          }}
+        >
+          Reset
+        </button>
+        <button
+          id="reverse-order"
           onClick={() => handleOrderChange("chronoOrder")}
         >
-          Chronological Order
-        </Dropdown.Item>
-        <Dropdown.Item
-          eventKey="reverseChronoOrder"
-          onClick={() => handleOrderChange("reverseChronoOrder")}
-        >
           Reverse Chronological Order
-        </Dropdown.Item>
-      </DropdownButton>
-      <DropdownButton
-        as={ButtonGroup}
-        title="Filter by Language"
-        id="bg-nested-dropdown"
-        className="custom-button"
-      >
-        <Dropdown.Item
-          eventKey="c++"
-          onClick={() => handleLanguageChange("C++")}
-        >
-          C++
-        </Dropdown.Item>
-        <Dropdown.Item eventKey="js" onClick={() => handleLanguageChange("Js")}>
-          JavaScript
-        </Dropdown.Item>
-        <Dropdown.Item
-          eventKey="python"
-          onClick={() => handleLanguageChange("Python")}
-        >
-          Python
-        </Dropdown.Item>
-        <Dropdown.Item
-          eventKey="ts"
-          onClick={() => handleLanguageChange("TypeScript")}
-        >
-          TypeScript
-        </Dropdown.Item>
-        <Dropdown.Item
-          eventKey="php"
-          onClick={() => handleLanguageChange("PHP")}
-        >
-          PHP
-        </Dropdown.Item>
-        <Dropdown.Item
-          eventKey="reset"
-          onClick={() => handleLanguageChange("")}
-        >
-          Reset Filter
-        </Dropdown.Item>
-      </DropdownButton>
-      <DropdownButton
-        as={ButtonGroup}
-        title="Filter by Year"
-        id="bg-nested-dropdown"
-        className="custom-button"
-      >
-        <Dropdown.Item eventKey="2023" onClick={() => handleYearChange("2023")}>
-          2023
-        </Dropdown.Item>
-        <Dropdown.Item eventKey="2022" onClick={() => handleYearChange("2022")}>
-          2022
-        </Dropdown.Item>
-      </DropdownButton>
-      <DropdownButton
-        as={ButtonGroup}
-        title="Reset all filters"
-        id="bg-nested-dropdown"
-        className="custom-button"
-        onClick={() => {
-          handleLanguageChange("");
-          handleOrderChange("chronoOrder");
-          handleYearChange(null);
-        }}
-      ></DropdownButton>
-    </ButtonGroup>
+        </button>
+      </div>
+    </div>
   );
 }
 
