@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import TopBar from "./components/TopBar";
 
 import App from "./App";
+import LandingPageComponent from "./components/LandingPage";
 import "./App.css";
 
 import Socials from "./pages/Socials";
@@ -14,7 +15,7 @@ function RouterApp() {
       <TopBar />
 
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<LandingPageComponent />} />
         <Route path="/Socials" element={<Socials />} />
         <Route path="/OtherPage" element={<OtherPage />} />
         <Route path="/AboutMePage" element={<AboutMeComponent />} />
