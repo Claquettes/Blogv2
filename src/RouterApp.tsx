@@ -19,6 +19,7 @@ function RouterApp() {
         <Route path="/Socials" element={<Socials />} />
         <Route path="/OtherPage" element={<OtherPage />} />
         <Route path="/AboutMePage" element={<AboutMeComponent />} />
+        <Route path="/Projects" element={<App />} />
         <Route
           path="*"
           element={
