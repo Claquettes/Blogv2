@@ -1,27 +1,24 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
+import TopBar from "./components/TopBar";
 
 import App from "./App";
 import "./App.css";
 
 import Socials from "./pages/Socials";
 import OtherPage from "./pages/OtherPage";
+import AboutMeComponent from "./components/AboutMe";
 
 function RouterApp() {
   return (
     <Router>
-      <div>
-        <Nav>
-          <Link to="/">Home</Link>
-          <Link to="/Socials">Socials</Link>
-          <Link to="/OtherPage">OtherPage</Link>
-        </Nav>
-      </div>
+      <TopBar />
 
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Socials" element={<Socials />} />
         <Route path="/OtherPage" element={<OtherPage />} />
+        <Route path="/AboutMePage" element={<AboutMeComponent />} />
         <Route
           path="*"
           element={

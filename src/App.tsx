@@ -4,6 +4,7 @@ import Article from "./components/Article";
 import FilterSelector from "./components/FilterSelector";
 import CustomSpinner from "./components/CustomSpinner";
 import instances from "./Instances";
+import AboutMeComponent from "./components/AboutMe";
 
 import "./App.css";
 
@@ -71,19 +72,10 @@ function App() {
 
   return (
     <>
-      <TopBar />
-      <div>
-        <div className="FilterSelectorContainer">
-          <FilterSelector
-            onLanguageChange={handleLanguageChange}
-            onOrderChange={handleOrderChange}
-            onYearChange={handleYearChange}
-          />
-        </div>
-
-        {isLoading ? (
-          <CustomSpinner />
-        ) : (
+      {isLoading ? (
+        <CustomSpinner />
+      ) : (
+        <div className="Corpus-container">
           <div className="Articles-container">
             {filteredArticles.map((instance, index) => (
               <Article
@@ -101,8 +93,15 @@ function App() {
               />
             ))}
           </div>
-        )}
-      </div>
+          <div className="FiltersHolder">
+            <FilterSelector
+              onLanguageChange={handleLanguageChange}
+              onOrderChange={handleOrderChange}
+              onYearChange={handleYearChange}
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }

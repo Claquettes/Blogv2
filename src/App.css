@@ -1,13 +1,22 @@
 .Articles-container{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
+  max-width: 1300px;
+}
+
+.Corpus-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; 
+  padding: 1rem; 
+  box-sizing: border-box; 
+}
+
+:root{
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .FilterSelectorContainer{
-  width: 64%;
   margin: 0 auto;
   padding: -10px;
   background-color: #f2f2f2;
@@ -16,6 +25,8 @@
   margin-top: 2rem;
   padding-left: 5%;
   padding-right: 5%;
+  width: 100%;
+  max-width: 300px;
 }
 
 .FilterSelectorContainer:hover{
@@ -27,6 +38,8 @@ a{
   color: #333;
 }
 
+
+
 .custom-button2{
     background-color: aliceblue;
     color: black;
@@ -36,4 +49,12 @@ a{
     font-size: 1.2rem;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.TopBar{
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
 }

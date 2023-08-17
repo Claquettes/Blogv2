@@ -1,4 +1,19 @@
-.Topbar{
-    background-color: brown;
-    font-size: larger;
+
+
+.Name{
+    padding: 1rem;
+    border-right: 10px solid #ccc;
+}
+
+.NavBarDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.NavBarDiv h4 {
+    margin: 0;
+    padding: 1rem;
 }
