@@ -22,7 +22,10 @@ function BasicExample() {
         <Link to="/Projects">
           <h4>Projects</h4>
         </Link>
-        <Link to="/Socials">
+        <Link to="https://www.linkedin.com/in/mathieu-ponton/">
+          <h4>Linkedin</h4>
+        </Link>
+        <Link to="https://www.linkedin.com/in/mathieu-ponton/overlay/1635518664594/single-media-viewer/?profileId=ACoAADOJ2fUBvelmwOJb_f5vHvyX8em8_iQ27Xs">
           <h4>Resume</h4>
         </Link>
       </div>

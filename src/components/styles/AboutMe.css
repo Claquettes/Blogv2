@@ -14,7 +14,12 @@
 }
 
 .language-logo{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: 1rem;
+    transition: 1s;
+}
+
+.language-logo:hover{
+    margin-left: 0;
 }
