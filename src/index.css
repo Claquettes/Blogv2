@@ -1,0 +1,6 @@
+/* we import the Color-palette from the file Color-palette.js */
+@import './components/styles/Color-palette.css';
+
+body{
+    background-color: var(--background-color-light)
+}
