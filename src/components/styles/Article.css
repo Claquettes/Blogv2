@@ -1,9 +1,11 @@
+@import './Color-palette.css';
+
 .article{
     width: 80%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
+  background-color: var(--background-color-light);
+  border: 1px solid var(--contrast-lighter-light);
   border-radius: 4px;
   padding-top: 3rem;
   margin-top: 1rem;

@@ -1,0 +1,42 @@
+.Name-center{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//ton contain the individual letters for the animation
+
+.letters-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+//the individual letters
+
+.letter{
+    background-color: black;
+    padding: 0.1rem;
+    font-size: 5rem;
+    color: white;
+    display: inline-block;
+}
+
+.letter-animation{
+    background-color: aqua;
+}
+
+.letter-animation-reverse{
+    background-color: red;
+}

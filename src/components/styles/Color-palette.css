@@ -1,4 +1,9 @@
 /*These are the colors used throughout the app.*/
 :root{
-    --background-color-light: #57be20;
+    /*Light mode*/
+    --background-color-light: #fefae0;
+    --light-contrast-light: #dda15e;
+    --accent-light: #bc6c25;
+    --contrast-light: #283618;
+    --contrast-lighter-light: #606c38;
 }
