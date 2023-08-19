@@ -33,10 +33,48 @@
     display: inline-block;
 }
 
+
+
 .letter-animation{
-    background-color: aqua;
+    animation: letter-animation 1s ease-in-out infinite;
+    animation-delay: calc(0.3s * var(--i));
 }
 
-.letter-animation-reverse{
-    background-color: red;
+.special-letter-animation{
+    color: red($color: #000000);
+}
+
+.blinking-letter{
+    animation: blinking-letter 1s ease-in-out infinite;
+}
+
+//we define the keyframes for the animation
+
+@keyframes letter-animation{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes blinking-letter{
+    0%{
+        color: white;
+        transform: translateY(0);
+    }
+    50%{
+        color: #000000;
+        transform: translateY(-1rem);
+
+    }
+    100%{
+        color: white;
+        transform: translateY(0);
+    }
+
 }

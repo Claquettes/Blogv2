@@ -1,7 +1,7 @@
 import TopBarArticle from "./TopBarArticle";
 
 //we import the css file
-import "./styles/Article.css";
+import "./styles/Article.scss";
 import "./styles/TopBarArticle.css";
 import "./styles/CardProfile.css";
 

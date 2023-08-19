@@ -6,16 +6,23 @@ function LandingPageComponent() {
   useEffect(() => {
     //get all the letters without using querySelectorAll (WITHOUT JQUERY) (jsquery is banned from this project)
     const letters = document.getElementsByClassName("letter");
+
     //get the number of letters
     const numberOfLetters = letters.length;
     //for each letter, we want to add a class that will trigger the animation
     for (let i = 0; i < numberOfLetters; i++) {
-      console.log(letters[i]);
-      if (i % 2 === 0) {
-        letters[i].classList.add("letter-animation");
-      } else {
-        letters[i].classList.add("letter-animation-reverse");
+      //we check if the element is "_" or " "
+      if (letters[i].innerHTML === "_" || letters[i].innerHTML === " ") {
+        //we add the class "special-letter-animation" to the element
+        letters[i].classList.add("blinking-letter");
+        letters[i].classList.add("letters-animation");
       }
+      //we assign the type HTMLElement to the letter
+      const letter = letters[i] as HTMLElement;
+      //we add the class
+      letter.classList.add("letter-animation");
+      //we add a delay to each letter
+      letter.style.animationDelay = `${i * 0.1}s`;
     }
   }, []);
 
@@ -25,7 +32,7 @@ function LandingPageComponent() {
         <div className="letters-containers">
           <div className="letter">H</div>
           <div className="letter">i</div>
-          <div className="letter">,</div>
+          <div className="letter">_</div>
           <div className="letter">I</div>
           <div className="letter">'</div>
           <div className="letter">m</div>
