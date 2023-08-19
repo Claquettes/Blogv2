@@ -3,7 +3,7 @@ import TopBar from "./components/TopBar";
 
 import App from "./App";
 import LandingPageComponent from "./components/LandingPage";
-import "./App.css";
+import "./App.scss";
 
 import Socials from "./pages/Socials";
 import OtherPage from "./pages/OtherPage";

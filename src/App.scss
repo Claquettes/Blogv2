@@ -1,3 +1,6 @@
+//we import the color palette from the file Color-palette.scss
+@import './components/styles/Color-palette.scss';
+
 .Articles-container{
     flex: 1;
   max-width: 1300px;
@@ -19,8 +22,8 @@
 .FilterSelectorContainer{
   margin: 0 auto;
   padding: -10px;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
+  background-color: $--accent;
+  border: 1px solid $--contrast;
   border-radius: 4px;
   margin-top: 2rem;
   padding-left: 5%;

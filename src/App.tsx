@@ -6,7 +6,7 @@ import CustomSpinner from "./components/CustomSpinner";
 import instances from "./Instances";
 import AboutMeComponent from "./components/AboutMe";
 
-import "./App.css";
+import "./App.scss";
 
 interface Instance {
   name: string;

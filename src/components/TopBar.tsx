@@ -1,10 +1,6 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import "./styles/TopBar.css";
+import "./styles/TopBar.scss";
 
 function BasicExample() {
   return (

@@ -1,3 +1,7 @@
+//we import the scss variables from the file Color-palette.scss
+@import './Color-palette.scss';
+
+
 .Name-center{
     font-size: 2.5rem;
     font-weight: 600;
@@ -20,13 +24,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-color: $--contrast;
 }
 
 //the individual letters
 
 .letter{
-    background-color: black;
+    background-color: $--contrast;
     padding: 0.1rem;
     font-size: 5rem;
     color: white;
@@ -41,7 +45,7 @@
 }
 
 .special-letter-animation{
-    color: red($color: #000000);
+    color: $--accent;
 }
 
 .blinking-letter{
@@ -68,7 +72,7 @@
         transform: translateY(0);
     }
     50%{
-        color: #000000;
+        color: $--contrast;
         transform: translateY(-1rem);
 
     }
