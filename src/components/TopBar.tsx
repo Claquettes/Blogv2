@@ -186,10 +186,10 @@ function BasicExample() {
         </h1>
       </div>
       <div className="NavBarDiv">
-        <Link to="/">
+        <Link to="/" state={IsDarkmode}>
           <span className="TopBarLink">Home</span>
         </Link>
-        <Link to="/AboutMePage">
+        <Link to="/AboutMePage" state={IsDarkmode}>
           <span className="TopBarLink">AboutMe</span>
         </Link>
         <Link to="/Projects">

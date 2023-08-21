@@ -4,7 +4,8 @@
     width: 80%;
   margin: 0 auto;
   padding: 20px;
-  border: 5px solid $--contrast;
+  border: 5px solid;
+  border-color: $--contrast;
   border-radius: 4%;
   padding-top: 3rem;
   margin-top: 1rem;

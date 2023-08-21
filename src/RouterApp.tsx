@@ -13,7 +13,6 @@ function RouterApp() {
   return (
     <Router>
       <TopBar />
-
       <Routes>
         <Route path="/" element={<LandingPageComponent />} />
         <Route path="/Socials" element={<Socials />} />

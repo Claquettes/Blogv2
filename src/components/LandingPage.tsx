@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./styles/LandingPage.scss";
+import AboutMeComponent from "./AboutMe";
+import App from "../App";
 
-import { render } from "react-dom";
+interface SectionProps {
+  id: string;
+  title: string;
+  content: string[];
+}
 
 function LandingPageComponent() {
-  //once the component is mounted, we want to start the animation
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const letters = document.getElementsByClassName("letter");
-
     //get the number of letters
     const numberOfLetters = letters.length;
     //for each letter, we want to add a class that will trigger the animation
@@ -30,6 +41,12 @@ function LandingPageComponent() {
   return (
     <div>
       <section className="LandingPage">
+        <button onClick={() => scrollToSection("projects")}>
+          Go to Projects
+        </button>
+        <button onClick={() => scrollToSection("aboutme")}>
+          Go to About Me
+        </button>
         <div className="LandingPage">
           <div className="Name-center">
             <div className="letters-containers">
@@ -51,6 +68,12 @@ function LandingPageComponent() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="about-me" id="aboutme">
+        <AboutMeComponent />
+      </section>
+      <section className="projects" id="projects">
+        <App />
       </section>
     </div>
   );

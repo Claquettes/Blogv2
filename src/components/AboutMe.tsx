@@ -1,5 +1,4 @@
-//we import the css file
-
+//we import the scss file
 import "./styles/AboutMe.scss";
 
 function AboutMeComponent() {
@@ -29,6 +28,9 @@ function AboutMeComponent() {
             this mail.
           </a>
         </p>
+        <figure>
+          <embed src="https://wakatime.com/share/@Claquettes/04c5f274-53a1-4be3-ba13-021abba0ef41.svg"></embed>
+        </figure>
       </div>
       <div className="about-me">
         <h1>The Technologies I...</h1>

@@ -1,10 +1,11 @@
 import { useState } from "react";
-import TopBar from "./components/TopBar";
 import Article from "./components/Article";
 import FilterSelector from "./components/FilterSelector";
 import CustomSpinner from "./components/CustomSpinner";
 import instances from "./Instances";
 import AboutMeComponent from "./components/AboutMe";
+
+import { useLocation } from "react-router-dom";
 
 import "./App.scss";
 
