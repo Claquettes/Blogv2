@@ -14,6 +14,18 @@ import { useRef } from "react";
 import "./styles/TopBar.scss";
 
 function BasicExample() {
+  interface SectionProps {
+    id: string;
+    title: string;
+    content: string[];
+  }
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   //Color Palette, such as defined in the Color-Palette.scss file
   /* $--background-color: #fefae0;
   $--light-contrast: #dda15e;
@@ -186,15 +198,23 @@ function BasicExample() {
         </h1>
       </div>
       <div className="NavBarDiv">
-        <Link to="/" state={IsDarkmode}>
-          <span className="TopBarLink">Home</span>
-        </Link>
-        <Link to="/AboutMePage" state={IsDarkmode}>
-          <span className="TopBarLink">AboutMe</span>
-        </Link>
-        <Link to="/Projects">
-          <span className="TopBarLink">Projects</span>
-        </Link>
+        <span
+          className="TopBarLink"
+          onClick={() => scrollToSection("LandingPage")}
+        >
+          Home
+        </span>
+
+        <span className="TopBarLink" onClick={() => scrollToSection("aboutme")}>
+          AboutMe
+        </span>
+
+        <span
+          className="TopBarLink"
+          onClick={() => scrollToSection("projects")}
+        >
+          Projects
+        </span>
         <Link to="https://www.linkedin.com/in/mathieu-ponton/">
           <span className="TopBarLink">Linkedin</span>
         </Link>

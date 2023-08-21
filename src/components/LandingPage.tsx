@@ -3,20 +3,7 @@ import "./styles/LandingPage.scss";
 import AboutMeComponent from "./AboutMe";
 import App from "../App";
 
-interface SectionProps {
-  id: string;
-  title: string;
-  content: string[];
-}
-
 function LandingPageComponent() {
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   useEffect(() => {
     const letters = document.getElementsByClassName("letter");
     //get the number of letters
@@ -41,13 +28,6 @@ function LandingPageComponent() {
   return (
     <div>
       <section className="LandingPage">
-        <button onClick={() => scrollToSection("aboutme")}>
-          Go to About Me
-        </button>
-        <button onClick={() => scrollToSection("projects")}>
-          Go to Projects
-        </button>
-
         <div className="LandingPage">
           <div className="Name-center">
             <div className="letters-containers">
