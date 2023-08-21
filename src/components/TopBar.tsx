@@ -71,7 +71,27 @@ function BasicExample() {
           TopBarLinks[i].style.color = ContrastDark;
         }
       }
-    } else {
+      //We change the color of the p
+      const p = document.getElementsByTagName(
+        "p"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (p) {
+        for (let i = 0; i < p.length; i++) {
+          p[i].style.color = ContrastDark;
+        }
+      }
+      //we change the color of the border of all of the articles
+      const articles = document.getElementsByClassName(
+        "article"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (articles) {
+        for (let i = 0; i < articles.length; i++) {
+          articles[i].style.borderColor = ContrastDark;
+        }
+      }
+    }
+    //LIGHT MODE
+    else {
       document.body.style.backgroundColor = BackgroundColorLight;
       document.body.style.color = Contrast;
       //WE CHANGE THE COLOR OF THE TEXT IN THE TOPBAR
@@ -99,6 +119,24 @@ function BasicExample() {
       if (TopBarLinks) {
         for (let i = 0; i < TopBarLinks.length; i++) {
           TopBarLinks[i].style.color = Contrast;
+        }
+      }
+      //We change the color of the p
+      const p = document.getElementsByTagName(
+        "p"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (p) {
+        for (let i = 0; i < p.length; i++) {
+          p[i].style.color = Contrast;
+        }
+      }
+      //we change the color of the border of all of the articles
+      const articles = document.getElementsByClassName(
+        "article"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (articles) {
+        for (let i = 0; i < articles.length; i++) {
+          articles[i].style.borderColor = Contrast;
         }
       }
     }
