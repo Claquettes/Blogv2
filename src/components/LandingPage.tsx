@@ -41,12 +41,13 @@ function LandingPageComponent() {
   return (
     <div>
       <section className="LandingPage">
-        <button onClick={() => scrollToSection("projects")}>
-          Go to Projects
-        </button>
         <button onClick={() => scrollToSection("aboutme")}>
           Go to About Me
         </button>
+        <button onClick={() => scrollToSection("projects")}>
+          Go to Projects
+        </button>
+
         <div className="LandingPage">
           <div className="Name-center">
             <div className="letters-containers">

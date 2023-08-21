@@ -34,7 +34,7 @@ function BasicExample() {
   const ContrastDark = "#fefae0";
 
   //we define a bool variable called isDarkmode
-  let IsDarkmode = false;
+  let IsDarkmode = true;
   //we define a function that will change the value of isDarkmode
   const changeDarkmode = () => {
     //we reverse the value of isDarkmode

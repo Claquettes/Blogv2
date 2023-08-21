@@ -6,6 +6,8 @@
     --accent-light: #bc6c25;
     --contrast-light: #283618;
     --contrast-lighter-light: #606c38;
+    $--BackgroundColorDark:#192a51;
+    $--ContrastDark:#fefae0;
 }
 // light mode
 $--background-color: #fefae0;
@@ -14,3 +16,5 @@ $--accent: #bc6c25;
 $--contrast: #283618;
 $--contrast-lighter: #606c38;
 /*Dark mode*/
+$--BackgroundColorDark:#192a51;
+$--ContrastDark:#fefae0;

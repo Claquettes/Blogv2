@@ -1,6 +1,10 @@
 /* we import the Color-palette from the file Color-palette.js */
 @import './components/styles/Color-palette.scss';
 
+html {
+  scroll-behavior: smooth;  
+}
+
 body{
     // we use the variable from Color-palette.scss! for exemple the variable $background-color-light
     background-color: $--background-color;
