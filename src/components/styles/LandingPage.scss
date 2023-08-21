@@ -66,13 +66,14 @@
     }
 }
 
+
 @keyframes blinking-letter{
     0%{
         color: white;
         transform: translateY(0);
     }
     50%{
-        color: $--contrast;
+        
         transform: translateY(-1rem);
 
     }
