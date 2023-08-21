@@ -8,9 +8,8 @@
 
 .about-me{
     margin: 2rem;
-    border: 1px solid #CCC;
+    border: 5px solid #CCC;
     border-radius: 10px;
-    background-color: #f2f2f2;
 }
 
 .language-logo{

@@ -89,6 +89,15 @@ function BasicExample() {
           articles[i].style.borderColor = ContrastDark;
         }
       }
+      //we change the background color of the about me
+      const aboutMe = document.getElementsByClassName(
+        "about-me"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (aboutMe) {
+        for (let i = 0; i < aboutMe.length; i++) {
+          aboutMe[i].style.borderColor = ContrastDark;
+        }
+      }
     }
     //LIGHT MODE
     else {
@@ -139,12 +148,23 @@ function BasicExample() {
           articles[i].style.borderColor = Contrast;
         }
       }
+      //we change the background color of the about me
+      const aboutMe = document.getElementsByClassName(
+        "about-me"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (aboutMe) {
+        for (let i = 0; i < aboutMe.length; i++) {
+          aboutMe[i].style.borderColor = Contrast;
+        }
+      }
     }
   };
   return (
     <div className="TopBar">
       <div className="Name" onClick={changeDarkmode}>
-        <h1>Mathieu Ponton </h1>
+        <h1>
+          <img src="src/assets/moon.svg"></img>Mathieu Ponton{" "}
+        </h1>
       </div>
       <div className="NavBarDiv">
         <Link to="/">
