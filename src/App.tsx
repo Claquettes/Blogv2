@@ -73,7 +73,9 @@ function App() {
   return (
     <>
       {isLoading ? (
-        <CustomSpinner />
+        <div className="load-wrapp">
+          <h1>Your content is loading </h1>
+        </div>
       ) : (
         <div className="Corpus-container">
           <div className="Articles-container">

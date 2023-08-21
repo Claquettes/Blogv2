@@ -23,7 +23,8 @@ function RouterApp() {
         <Route
           path="*"
           element={
-            <div>
+            <div className="a404error">
+              <img src="src/assets/cat.jpg"></img>
               <h1>404 we are lost.</h1>
               <h3>Click here to go back to the home page</h3>
               <Link to="/">Home</Link>

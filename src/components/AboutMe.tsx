@@ -1,6 +1,6 @@
 //we import the css file
 
-import "./styles/AboutMe.css";
+import "./styles/AboutMe.scss";
 
 function AboutMeComponent() {
   return (

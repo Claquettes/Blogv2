@@ -80,6 +80,15 @@ function BasicExample() {
           p[i].style.color = ContrastDark;
         }
       }
+      //we change the color of the a
+      const a = document.getElementsByTagName(
+        "a"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (a) {
+        for (let i = 0; i < a.length; i++) {
+          a[i].style.color = ContrastDark;
+        }
+      }
       //we change the color of the border of all of the articles
       const articles = document.getElementsByClassName(
         "article"
@@ -139,6 +148,15 @@ function BasicExample() {
           p[i].style.color = Contrast;
         }
       }
+      //we change the color of the a
+      const a = document.getElementsByTagName(
+        "a"
+      ) as HTMLCollectionOf<HTMLElement>;
+      if (a) {
+        for (let i = 0; i < a.length; i++) {
+          a[i].style.color = Contrast;
+        }
+      }
       //we change the color of the border of all of the articles
       const articles = document.getElementsByClassName(
         "article"
@@ -161,9 +179,10 @@ function BasicExample() {
   };
   return (
     <div className="TopBar">
-      <div className="Name" onClick={changeDarkmode}>
+      <div className="Name">
         <h1>
-          <img src="src/assets/moon.svg"></img>Mathieu Ponton{" "}
+          <img src="src/assets/moon.svg" onClick={changeDarkmode}></img>{" "}
+          <Link to="/">Mathieu Ponton </Link>
         </h1>
       </div>
       <div className="NavBarDiv">
