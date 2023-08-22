@@ -16,7 +16,7 @@ function LandingPageComponent() {
       <Parallax pages={4} ref={ref}>
         <ParallaxLayer
           offset={0}
-          speed={0.7}
+          speed={0.4}
           factor={1}
           style={{
             zIndex: -1,
@@ -51,7 +51,7 @@ function LandingPageComponent() {
             <App />
           </section>
         </ParallaxLayer>
-        <ParallaxLayer offset={10} speed={0.5} factor={1}></ParallaxLayer>
+        <ParallaxLayer offset={17} speed={0.5} factor={1}></ParallaxLayer>
       </Parallax>
     </div>
   );
