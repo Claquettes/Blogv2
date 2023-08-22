@@ -7,14 +7,16 @@ import App from "../App";
 
 import top from "../assets/wptop1.png";
 import two from "../assets/wptwo.png";
+import side from "../assets/side.png";
+import portrait from "../assets/portrait.png";
 
 function LandingPageComponent() {
   const ref = useRef<HTMLDivElement>(null);
 
   return (
     <div>
-      <Parallax pages={6} ref={ref}>
-        <ParallaxLayer
+      <Parallax pages={7} ref={ref}>
+        <ParallaxLayer //background top
           offset={0}
           speed={0.7}
           factor={1}
@@ -26,7 +28,7 @@ function LandingPageComponent() {
             marginTop: "-12%",
           }}
         ></ParallaxLayer>
-        <ParallaxLayer
+        <ParallaxLayer //text top
           offset={0.0}
           speed={1.5}
           factor={1}
@@ -38,8 +40,32 @@ function LandingPageComponent() {
             </section>
           </div>
         </ParallaxLayer>
+        <ParallaxLayer //portrait background
+          offset={0.7}
+          speed={0.5}
+          factor={1.2}
+          style={{
+            zIndex: -1,
+            backgroundImage: `url(${portrait})`,
+            backgroundSize: "contain",
+            backgroundPosition: "left",
+          }}
+        ></ParallaxLayer>
 
-        <ParallaxLayer
+        <ParallaxLayer //SIDE
+          offset={0.25}
+          speed={3.5}
+          factor={0.35}
+          style={{
+            zIndex: 3,
+            backgroundImage: `url(${side})`,
+            backgroundSize: "contain",
+            backgroundPosition: "left",
+            marginLeft: "-10%",
+          }}
+        ></ParallaxLayer>
+
+        <ParallaxLayer //background 2nd
           offset={0.51}
           speed={1.2}
           factor={1}
@@ -51,7 +77,12 @@ function LandingPageComponent() {
           }}
         ></ParallaxLayer>
 
-        <ParallaxLayer offset={0.8} speed={2} factor={1}>
+        <ParallaxLayer
+          offset={0.8}
+          speed={2}
+          factor={1} //content 2nd
+          style={{ zIndex: 1, marginTop: "-5%" }}
+        >
           <section className="aboutme" id="aboutme">
             <AboutMeComponent />
           </section>

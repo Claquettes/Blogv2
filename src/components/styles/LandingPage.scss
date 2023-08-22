@@ -24,23 +24,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: $--ContrastDark;
 }
 
 //the individual letters
 
 .letter{
-    background-color: $--ContrastDark;
+    background-color: #441a43;
     padding: 0.1rem;
     font-size: 5rem;
     display: inline-block;
-    color: $--BackgroundColorDark;
+    color: #124153;
 }
 
 
 
 .letter-animation{
-    animation: letter-animation 1s ease-in-out infinite;
+    animation: letter-animation 2s ease-in-out infinite;
     animation-delay: calc(0.3s * var(--i));
 }
 
@@ -49,7 +48,7 @@
 }
 
 .blinking-letter{
-    animation: blinking-letter 1s ease-in-out infinite;
+    animation: blinking-letter 2s ease-in-out infinite;
 }
 
 
@@ -74,16 +73,16 @@
 
 @keyframes blinking-letter{
     0%{
-        color: white;
+        color: #441a43;
         transform: translateY(0);
     }
     50%{
-        color: $--BackgroundColorDark;
+        color: #124153;
         transform: translateY(-1rem);
 
     }
     100%{
-        color: white;
+        color: #441a43;
         transform: translateY(0);
     }
 
