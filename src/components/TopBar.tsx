@@ -184,10 +184,9 @@ function BasicExample() {
   return (
     <div className="TopBar">
       <div className="Name">
-        <h1>
-          <img src="src/assets/moon.svg" onClick={changeDarkmode}></img>{" "}
-          <Link to="/">Mathieu Ponton </Link>
-        </h1>
+        <a href="/">
+          <h1>Mathieu Ponton</h1>
+        </a>
       </div>
       <div className="NavBarDiv">
         <span

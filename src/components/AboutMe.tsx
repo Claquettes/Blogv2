@@ -28,8 +28,8 @@ function AboutMeComponent() {
             this mail.
           </a>
         </p>
-        <figure>
-          <embed src="https://wakatime.com/share/@Claquettes/04c5f274-53a1-4be3-ba13-021abba0ef41.svg"></embed>
+        <figure className="wakatime">
+          <embed src="https://wakatime.com/share/@Claquettes/338ee62f-76c3-4d76-afe6-02e9d7d05de7.svg"></embed>
         </figure>
       </div>
       <div className="about-me">
