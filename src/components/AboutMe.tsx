@@ -3,7 +3,7 @@ import "./styles/AboutMe.scss";
 
 function AboutMeComponent() {
   return (
-    <div className="entire-about-me-compo">
+    <div>
       <div className="about-me">
         <h1>About Me</h1>
         <p>

@@ -13,17 +13,24 @@ function LandingPageComponent() {
 
   return (
     <div>
-      <Parallax pages={4} ref={ref}>
+      <Parallax pages={6} ref={ref}>
         <ParallaxLayer
           offset={0}
-          speed={0.4}
+          speed={0.7}
           factor={1}
           style={{
             zIndex: -1,
             backgroundImage: `url(${top})`,
             backgroundSize: "fill",
             backgroundPosition: "center",
+            marginTop: "-12%",
           }}
+        ></ParallaxLayer>
+        <ParallaxLayer
+          offset={0.0}
+          speed={1.5}
+          factor={1}
+          style={{ marginTop: "-150px" }}
         >
           <div className="NameTitle">
             <section className="LandingPage">
@@ -31,9 +38,10 @@ function LandingPageComponent() {
             </section>
           </div>
         </ParallaxLayer>
+
         <ParallaxLayer
-          offset={0.75}
-          speed={0.5}
+          offset={0.51}
+          speed={1.2}
           factor={1}
           style={{
             zIndex: -1,
@@ -41,8 +49,10 @@ function LandingPageComponent() {
             backgroundSize: "fill",
             backgroundPosition: "right",
           }}
-        >
-          <section className="about-me" id="aboutme">
+        ></ParallaxLayer>
+
+        <ParallaxLayer offset={0.8} speed={2} factor={1}>
+          <section className="aboutme" id="aboutme">
             <AboutMeComponent />
           </section>
         </ParallaxLayer>
