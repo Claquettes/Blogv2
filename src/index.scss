@@ -20,10 +20,30 @@ body{
     margin-right: 50%;
 }
 
+.about-me{
+//we add the "neon blinking animation"
+animation: blinking-neon-glow 4s ease-in-out infinite;
+}
+
+
 .NameTitle{
     background-color: green;
 }
 
 a{
     color:$--ContrastDark;
+}
+
+
+//animation to add a neon blinking effect on the box shadow of a div
+@keyframes blinking-neon-glow{
+    0%{
+        box-shadow: 0 0 22px 10px #441a43;
+    }
+    50%{
+        box-shadow: 0 0 22px 10px #124153, 0 0 22px 10px #124153;
+    }
+    100%{
+        box-shadow: 0 0 22px 10px #441a43;
+    }
 }
