@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import "./styles/LandingPage.scss";
-
-import App from "../App";
 
 function NameTitleComponent() {
   useEffect(() => {

@@ -1,15 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-//we import scrollTo
-import {
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
-
-//we import useRef
-import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 import "./styles/TopBar.scss";
 
@@ -36,10 +25,12 @@ function BasicExample() {
 
   //light mode
   const BackgroundColorLight = "#fefae0";
+  /*
   const LightContrast = "#dda15e";
   const Accent = "#bc6c25";
-  const Contrast = "#283618";
   const ContrastLighter = "#606c38";
+  */
+  const Contrast = "#283618";
 
   //dark mode
   //const BackgroundColorDark = "#192a51";

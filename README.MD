@@ -1,1 +1,0 @@
-Credits photo: Photo by Jonathan Formento from Pexels: https://www.pexels.com/photo/illuminated-building-during-night-time-4337199/
