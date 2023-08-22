@@ -42,7 +42,8 @@ function BasicExample() {
   const ContrastLighter = "#606c38";
 
   //dark mode
-  const BackgroundColorDark = "#192a51";
+  //const BackgroundColorDark = "#192a51";
+  const BackgroundColorDark = "#000000";
   const ContrastDark = "#fefae0";
 
   //we define a bool variable called isDarkmode

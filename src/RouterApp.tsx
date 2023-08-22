@@ -12,7 +12,6 @@ import AboutMeComponent from "./components/AboutMe";
 function RouterApp() {
   return (
     <Router>
-      <TopBar />
       <Routes>
         <Route path="/" element={<LandingPageComponent />} />
         <Route path="/Socials" element={<Socials />} />
@@ -22,11 +21,9 @@ function RouterApp() {
         <Route
           path="*"
           element={
-            <div className="a404error">
-              <img src="src/assets/cat.jpg"></img>
-              <h1>404 we are lost.</h1>
-              <h3>Click here to go back to the home page</h3>
-              <Link to="/">Home</Link>
+            <div>
+              <TopBar />
+              <LandingPageComponent />
             </div>
           }
         />

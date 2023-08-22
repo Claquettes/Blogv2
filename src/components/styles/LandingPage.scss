@@ -24,17 +24,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: $--contrast;
+    background-color: $--ContrastDark;
 }
 
 //the individual letters
 
 .letter{
-    background-color: $--contrast;
+    background-color: $--ContrastDark;
     padding: 0.1rem;
     font-size: 5rem;
-    color: white;
     display: inline-block;
+    color: $--BackgroundColorDark;
 }
 
 

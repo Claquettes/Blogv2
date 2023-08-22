@@ -5,6 +5,7 @@
 
 .Name{
     padding-left: 3%;
+    color:$--ContrastDark;
 }
 
 .NavBarDiv{
@@ -23,7 +24,7 @@
 
 .TopBarLink{
     text-decoration: none;
-    color: $--contrast;
+    color: $--ContrastDark;
     font-size: 1.5rem;
     padding: 1rem;
     

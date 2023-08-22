@@ -22,8 +22,7 @@
 .FilterSelectorContainer{
   margin: 0 auto;
   padding: -10px;
-  background-color: $--accent;
-  border: 1px solid $--contrast;
+  border: 1px solid $--ContrastDark;
   border-radius: 4px;
   margin-top: 2rem;
   padding-left: 5%;
@@ -49,10 +48,12 @@
 }
 
 .TopBar{
-  color: $--contrast;
+  color: $--ContrastDark;
   padding: 20px;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
   font-size: 1.3rem;
+  z-index: 99;
 }
+

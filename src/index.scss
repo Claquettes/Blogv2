@@ -3,17 +3,27 @@
 
 body{
     // we use the variable from Color-palette.scss! for exemple the variable $background-color-light
-    background-color: $--background-color;
+    //background-color: $--BackgroundColorDark;
+    background-color: black;
+    color: $--ContrastDark;
     transition: background-color 1s, color 1s ease-out;
 }
 
-
 .LandingPage{
-    min-height: 100vh;
+    background-image: url("./assets/wp.jpg");
+    background-size: cover;
 }
 
 .a404error{
     //we center the div
     justify-content: center;
     margin-right: 50%;
+}
+
+.NameTitle{
+    background-color: green;
+}
+
+a{
+    color:$--ContrastDark;
 }
