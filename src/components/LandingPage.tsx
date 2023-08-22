@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./styles/LandingPage.scss";
 import AboutMeComponent from "./AboutMe";
+import AboutMeLangComponent from "./AboutMeLang";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import NameTitleComponent from "./NameTitle";
 import App from "../App";
@@ -15,7 +16,7 @@ function LandingPageComponent() {
 
   return (
     <div>
-      <Parallax pages={7} ref={ref}>
+      <Parallax pages={8} ref={ref}>
         <ParallaxLayer //background top
           offset={0}
           speed={0.7}
@@ -87,12 +88,25 @@ function LandingPageComponent() {
             <AboutMeComponent />
           </section>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.85} speed={0.5} factor={17}>
+        <ParallaxLayer //lang about me
+          offset={0.99}
+          speed={1.5}
+          factor={1}
+          style={{ zIndex: 1 }}
+        >
+          <AboutMeLangComponent />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={0.999}
+          speed={0.1}
+          factor={16}
+          style={{ zIndex: 1, marginTop: "5%" }}
+        >
           <section className="projects" id="projects">
             <App />
           </section>
         </ParallaxLayer>
-        <ParallaxLayer offset={17} speed={0.5} factor={1}></ParallaxLayer>
+        <ParallaxLayer offset={17} speed={3.5} factor={1}></ParallaxLayer>
       </Parallax>
     </div>
   );
