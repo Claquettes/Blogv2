@@ -1,10 +1,6 @@
 /* we import the Color-palette from the file Color-palette.js */
 @import './components/styles/Color-palette.scss';
 
-html {
-  scroll-behavior: smooth;  
-}
-
 body{
     // we use the variable from Color-palette.scss! for exemple the variable $background-color-light
     background-color: $--background-color;
@@ -13,8 +9,7 @@ body{
 
 
 .LandingPage{
-    margin-bottom: 45rem;
-    
+    min-height: 100vh;
 }
 
 .a404error{
