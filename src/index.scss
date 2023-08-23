@@ -25,6 +25,13 @@ body{
 animation: blinking-neon-glow 4s ease-in-out infinite;
 }
 
+.article{
+animation: blinking-neon-glow 4s ease-in-out infinite;
+}
+
+h3{
+    color: $--ContrastDark;
+}
 
 .NameTitle{
     background-color: green;

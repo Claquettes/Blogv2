@@ -1,8 +1,3 @@
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
-
 import "./styles/FilterSelector.css";
 
 interface FilterSelectorProps {
@@ -32,6 +27,9 @@ function FilterSelector({
     <div className="filter-container">
       <label htmlFor="language">Language:</label>
       <select id="language">
+        <option value="reset" onClick={() => handleLanguageChange("")}>
+          All
+        </option>
         <option value="c++" onClick={() => handleLanguageChange("C++")}>
           C++
         </option>
@@ -46,9 +44,6 @@ function FilterSelector({
         </option>
         <option value="php" onClick={() => handleLanguageChange("PHP")}>
           PHP
-        </option>
-        <option value="reset" onClick={() => handleLanguageChange("")}>
-          All
         </option>
       </select>
 

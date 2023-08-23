@@ -1,7 +1,6 @@
-import Card from "react-bootstrap/Card";
-
 //we import the list of co-authors
 import coAuthors from "../IndexOfCoAuthors";
+import "./styles/CardProfile.scss";
 
 interface CardProfileProps {
   Name: string;
@@ -21,15 +20,18 @@ function CardProfile(props: CardProfileProps) {
   const { SecondndLink } = coAuthor;
 
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Body>
-        <Card.Title>{Name}</Card.Title>
-        <Card.Img variant="top" src={Image} />
-        <Card.Text>{coAuthor.Text}</Card.Text>
-        <Card.Link href={GithubLink}>Github</Card.Link>
-        <Card.Link href={SecondndLink}>Website</Card.Link>
-      </Card.Body>
-    </Card>
+    //we redo the card without bootstrap
+    <div className="card">
+      <div className="card-header">
+        <h1>{Name}</h1>
+        <img src={Image} alt={Name} />
+      </div>
+      <div className="card-body">
+        <p>{coAuthor.Text}</p>
+        <a href={GithubLink}>Github</a>
+        <a href={SecondndLink}>Website</a>
+      </div>
+    </div>
   );
 }
 

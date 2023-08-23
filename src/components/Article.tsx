@@ -1,9 +1,7 @@
-import TopBarArticle from "./TopBarArticle";
-
 //we import the css file
 import "./styles/Article.scss";
 import "./styles/TopBarArticle.css";
-import "./styles/CardProfile.css";
+import "./styles/CardProfile.scss";
 
 //we define the card Component
 
