@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "./styles/LandingPage.scss";
 import AboutMeComponent from "./AboutMe";
 import AboutMeLangComponent from "./AboutMeLang";
@@ -13,11 +14,11 @@ import bikes from "../assets/bikes2.png";
 import lamp from "../assets/lamp.png";
 
 function LandingPageComponent() {
-  //const ref = useRef<HTMLDivElement>(null); j'ai l'impression que ca marche sans
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
     <div>
-      <Parallax pages={10}>
+      <Parallax pages={10} ref={ref}>
         <ParallaxLayer //background top
           offset={0}
           speed={0.7}
@@ -67,6 +68,7 @@ function LandingPageComponent() {
             backgroundImage: `url(${bikes})`,
             backgroundSize: "contain",
             backgroundPosition: "left",
+            blur: "8px",
           }}
         ></ParallaxLayer>
 
@@ -106,7 +108,7 @@ function LandingPageComponent() {
           </section>
         </ParallaxLayer>
         <ParallaxLayer //lang about me
-          offset={0.9999}
+          offset={0.99}
           speed={1.5}
           factor={1}
           style={{ zIndex: 1 }}
