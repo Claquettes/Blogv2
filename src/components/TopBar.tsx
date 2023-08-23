@@ -196,15 +196,10 @@ function BasicExample() {
           Home
         </span>
 
-        <span className="TopBarLink" onClick={() => scrollToSection("aboutme")}>
-          AboutMe
-        </span>
-
-        <span
-          className="TopBarLink"
-          onClick={() => scrollToSection("projects")}
-        >
-          Projects
+        <span className="TopBarLink">
+          <a href="https://github.com/Claquettes" target="_blank">
+            Github
+          </a>
         </span>
         <Link to="https://www.linkedin.com/in/mathieu-ponton/">
           <span className="TopBarLink">Linkedin</span>

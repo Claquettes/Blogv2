@@ -7,7 +7,7 @@ function AboutMeLangComponent() {
       <div className="about-me">
         <h1>The Technologies I...</h1>
         <div className="love-to-use">
-          <h2>Love to use</h2>
+          <h1>Love to use</h1>
           <div className="technologies">
             <img
               src="https://claq.fr/host/c.png"
@@ -82,7 +82,7 @@ function AboutMeLangComponent() {
           </div>
         </div>
         <div className="have-used">
-          <h2>Have used</h2>
+          <h1>Have used</h1>
           <div className="technologies">
             <img
               src="https://claq.fr/host/py.png"

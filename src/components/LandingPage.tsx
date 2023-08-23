@@ -3,41 +3,47 @@ import "./styles/LandingPage.scss";
 import AboutMeComponent from "./AboutMe";
 import AboutMeLangComponent from "./AboutMeLang";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import NameTitleComponent from "./NameTitle";
+import NameTitleNeonComponent from "./NameTitleNeon";
 import App from "../App";
 
 import top from "../assets/wptop1.png";
 import two from "../assets/wptwo.png";
 import side from "../assets/side.png";
 import portrait from "../assets/portrait.png";
+import bikes from "../assets/bikes2.png";
+import lamp from "../assets/lamp.png";
 
 function LandingPageComponent() {
   const ref = useRef<HTMLDivElement>(null);
 
   return (
     <div>
-      <Parallax pages={8} ref={ref}>
+      <Parallax pages={10} ref={ref}>
         <ParallaxLayer //background top
           offset={0}
           speed={0.7}
           factor={1}
           style={{
-            zIndex: -1,
+            zIndex: -10,
             backgroundImage: `url(${top})`,
             backgroundSize: "fill",
-            backgroundPosition: "center",
+            backgroundPosition: "right",
             marginTop: "-12%",
           }}
         ></ParallaxLayer>
         <ParallaxLayer //text top
           offset={0.0}
           speed={1.5}
-          factor={1}
-          style={{ marginTop: "-150px" }}
+          factor={1.2}
+          style={{
+            zIndex: "9",
+            marginTop: "-5%",
+            marginLeft: "-15%",
+          }}
         >
           <div className="NameTitle">
             <section className="LandingPage">
-              <NameTitleComponent />
+              <NameTitleNeonComponent />
             </section>
           </div>
         </ParallaxLayer>
@@ -49,7 +55,20 @@ function LandingPageComponent() {
             zIndex: -1,
             backgroundImage: `url(${portrait})`,
             backgroundSize: "contain",
+            backgroundPosition: "right",
+          }}
+        ></ParallaxLayer>
+
+        <ParallaxLayer //2nd portrait horizontal scrolling
+          offset={0.6}
+          speed={1}
+          factor={1}
+          style={{
+            zIndex: -1,
+            backgroundImage: `url(${bikes})`,
+            backgroundSize: "contain",
             backgroundPosition: "left",
+            blur: "8px",
           }}
         ></ParallaxLayer>
 
@@ -96,9 +115,23 @@ function LandingPageComponent() {
         >
           <AboutMeLangComponent />
         </ParallaxLayer>
+        <ParallaxLayer //lamp
+          offset={0.8}
+          speed={3.5}
+          factor={1.5}
+          style={{
+            zIndex: -5,
+            backgroundImage: `url(${lamp})`,
+            backgroundSize: "contain",
+            backgroundPosition: "right",
+            filter: "blur(1px)",
+            boxShadow: "0px 0px 20px 20px rgba(0,0,0,0.75)",
+          }}
+        ></ParallaxLayer>
+
         <ParallaxLayer
           offset={0.999}
-          speed={0.1}
+          speed={0.2}
           factor={16}
           style={{ zIndex: 1, marginTop: "5%" }}
         >
