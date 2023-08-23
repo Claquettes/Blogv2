@@ -1,4 +1,3 @@
-import TopBarArticle from "./TopBarArticle";
 
 //we import the css file
 import "./styles/Article.scss";
