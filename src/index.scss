@@ -50,4 +50,13 @@ a{
 
 .TopBar{
     z-index: 8;
+    position: absolute;
+    top: 0;
+    width: 97%;
+    background-color: black;
+    padding-bottom: 0%;
+    //mobile first
+    @media (min-width: 768px){
+        width: 100%;
+    }
 }

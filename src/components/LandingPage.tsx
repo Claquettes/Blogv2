@@ -14,7 +14,7 @@ import lamp from "../assets/lamp.png";
 
 function LandingPageComponent() {
   return (
-    <div>
+    <div style={{ marginTop: "10%" }}>
       <Parallax pages={10}>
         <ParallaxLayer //background top
           offset={0}
@@ -126,16 +126,16 @@ function LandingPageComponent() {
         ></ParallaxLayer>
 
         <ParallaxLayer
-          offset={0.999}
-          speed={0.2}
-          factor={16}
-          style={{ zIndex: 1, marginTop: "5%" }}
+          offset={1}
+          speed={2.1}
+          factor={106}
+          style={{ zIndex: 1, marginTop: "-55%" }}
         >
           <section className="projects" id="projects">
             <App />
           </section>
         </ParallaxLayer>
-        <ParallaxLayer offset={17} speed={3.5} factor={1}></ParallaxLayer>
+        <ParallaxLayer offset={25} speed={2.5} factor={1}></ParallaxLayer>
       </Parallax>
     </div>
   );
